@@ -71,9 +71,13 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         <h3 class="text-lg text-neutral-100">Contáctame</h3>
       </header>
       <p>
-        Enviame un email a <Link
+        Envíame un mensaje a <Link
           href={`mailto:${presentation.mail}`}
           label={presentation.mail}
+        /> o{" "}
+        <Link
+          href={`https://wa.me/${presentation.phone}`}
+          label={`WhatsApp ${presentation.phone}`}
         />
       </p>
     </article>

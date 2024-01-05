@@ -5,18 +5,20 @@ type Social = {
 
 type Presentation = {
   mail: string;
+  phone: string;
   title: string;
   description: string;
   socials: Social[];
   profile?: string;
   skills: {
     label: string;
-    icon?: string;
+    icon: string;
   }[];
 };
 
 const presentation: Presentation = {
   mail: "santiagojimenezmoncada@gmail.com",
+  phone: "+573003060003",
   title: "Hola, soy Santiago 🧔",
   // profile: "/profile.webp",
   description:
