@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     title: "Portfolio / Profit Manager",
     techs: ["Svelte", "JavaScript", "Firebase", "Flowbite", "Firebase Auth"],
-    link: "https://www.linablidi.fr/",
+    link: "https://profit-money.vercel.app/",
     description:
       "Una app que gestiona tus finanzas con facilidad, puede controlar tus cuentas de ahorro, supervisa inversiones (CDTs, RentaAhorro), manejar tus préstamos a terceros.",
   },
