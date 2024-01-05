@@ -22,7 +22,7 @@ const presentation: Presentation = {
   title: "Hola, soy Santiago 🧔",
   // profile: "/profile.webp",
   description:
-    "Soy un *desarrollador frontend colombiano* con *2 años* de experiencia en el mundo web, enfocado actualmente en *Django y Vue.js*. Trabajo  con *Svelte, React y otros frameworks*, siempre en búsqueda de nuevas tecnologías. Apasionado por los viajes, estoy listo para asumir nuevos retos.",
+    "Soy un *desarrollador frontend* con *2 años* de experiencia en el mundo web, enfocado actualmente en *Django y Vue.js*. Trabajo  con *Svelte, React y otros frameworks*, tengo conocimiento  en Docker y deploy de proyectos con linux, siempre en búsqueda de nuevas tecnologías. Apasionado por los viajes, estoy listo para asumir nuevos retos.",
   socials: [
     {
       label: "Gitlab",
@@ -45,6 +45,14 @@ const presentation: Presentation = {
     {
       label: "JavaScript",
       icon: "js",
+    },
+    {
+      label: "HTML",
+      icon: "html5",
+    },
+    {
+      label: "CSS",
+      icon: "csswizardry",
     },
     {
       label: "Vue.js",
@@ -77,6 +85,10 @@ const presentation: Presentation = {
     {
       label: "Git",
       icon: "git",
+    },
+    {
+      label: "Linux",
+      icon: "ubuntu",
     },
   ],
 };

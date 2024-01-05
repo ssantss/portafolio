@@ -26,7 +26,7 @@ const formatTechs = (values: string[]) =>
   {
     !isComingSoon && (
       <>
-        <div class="group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 md:flex-row md:items-center">
+        <div class="project-container  group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 md:flex-row md:items-center">
           <div>
             <div class="flex w-full flex-col gap-4 md:flex-row md:items-center">
               <div class="flex">
@@ -59,7 +59,7 @@ const formatTechs = (values: string[]) =>
                 Youtube
               </a>
               <a
-                class="ml-2 mt-2 w-fit rounded-md border border border-neutral-700 bg-neutral-900 px-4 py-1"
+                class="visitar-btn ml-2 mt-2 w-fit rounded-md border border border-neutral-700 bg-neutral-900 px-4 py-1"
                 href={link}
                 target="_blank"
                 rel="noreferrer"
@@ -93,6 +93,30 @@ const formatTechs = (values: string[]) =>
       </>
     )
   }
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const projectContainers = document.querySelectorAll(".project-container");
+
+      projectContainers.forEach((container) => {
+        container.addEventListener("click", function (event) {
+          // Comprobar si el clic fue en uno de los otros enlaces
+          if (
+            event.target.closest("a") &&
+            !event.target.classList.contains("visitar-btn")
+          ) {
+            return; // Si se hizo clic en otro enlace, no hacer nada
+          }
+
+          // Encuentra el enlace "Visitar" dentro de este contenedor específico
+          const visitarLink = container.querySelector(".visitar-btn");
+          if (visitarLink) {
+            visitarLink.click(); // Simula un clic en el enlace "Visitar"
+          }
+        });
+      });
+    });
+  </script>
 </>
 
 <style></style>
