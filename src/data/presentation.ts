@@ -9,6 +9,10 @@ type Presentation = {
   description: string;
   socials: Social[];
   profile?: string;
+  skills: {
+    label: string;
+    icon?: string;
+  }[];
 };
 
 const presentation: Presentation = {
@@ -33,6 +37,44 @@ const presentation: Presentation = {
     {
       label: "X",
       link: "https://twitter.com/santiiiag_o",
+    },
+  ],
+  skills: [
+    {
+      label: "JavaScript",
+      icon: "js",
+    },
+    {
+      label: "Vue.js",
+      icon: "vue-js",
+    },
+    {
+      label: "Svelte",
+      icon: "svelte",
+    },
+    {
+      label: "React",
+      icon: "react",
+    },
+    {
+      label: "Django",
+      icon: "django",
+    },
+    {
+      label: "Node.js",
+      icon: "node-js",
+    },
+    {
+      label: "Python",
+      icon: "python",
+    },
+    {
+      label: "Docker",
+      icon: "docker",
+    },
+    {
+      label: "Git",
+      icon: "git",
     },
   ],
 };
