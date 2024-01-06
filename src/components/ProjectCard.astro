@@ -3,7 +3,8 @@ import type { Project } from "@/data/projects";
 
 type Props = Project;
 
-const { title, techs, link, isComingSoon, description, git } = Astro.props;
+const { title, techs, link, isComingSoon, description, git, youtube } =
+  Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -42,30 +43,36 @@ const formatTechs = (values: string[]) =>
             </div>
             <p class="mt-2">{description}</p>
             <div class="flex">
-              <a
-                class="mt-2  w-fit rounded-md border border-neutral-700 bg-neutral-900 px-4 py-1"
-                href={git}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Gitlab
-              </a>
-              <a
-                class="ml-2 mt-2 w-fit rounded-md border border-neutral-700 bg-neutral-900 px-4 py-1"
-                href={git}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Youtube
-              </a>
-              <a
-                class="visitar-btn ml-2 mt-2 w-fit rounded-md border border border-neutral-700 bg-neutral-900 px-4 py-1"
-                href={link}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Visitar
-              </a>
+              {git && (
+                <a
+                  class="ml-2 mt-2 w-fit rounded-md border border-neutral-700 bg-neutral-900 px-4 py-1"
+                  href={git}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              )}
+              {youtube && (
+                <a
+                  class="ml-2 mt-2 w-fit rounded-md border border-neutral-700 bg-neutral-900 px-4 py-1"
+                  href={youtube}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Youtube
+                </a>
+              )}
+              {link && (
+                <a
+                  class="ml-2 mt-2 w-fit rounded-md border border-neutral-700 bg-neutral-900 px-4 py-1"
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visitar
+                </a>
+              )}
             </div>
           </div>
 
