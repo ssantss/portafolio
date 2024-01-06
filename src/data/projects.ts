@@ -33,13 +33,6 @@ const projects: Project[] = [
     description:
       "Una app que gestiona tus finanzas con facilidad, puede controlar tus cuentas de ahorro, supervisa inversiones (CDTs, RentaAhorro), manejar tus préstamos a terceros.",
   },
-  // {
-  //   title: "Template",
-  //   techs: ["Astro"],
-  //   link: "/",
-  //   git: "https://gitlab.com/ssantss/portfolio",
-  //   isComingSoon: true,
-  // },
   {
     title: "IPhone stock checker",
     techs: ["Python"],
