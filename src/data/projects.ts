@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     title: "Profit Manager",
     techs: ["Svelte", "JavaScript", "Firebase", "Flowbite", "Firebase Auth"],
-    link: "https://profit-money.vercel.app/",
+    link: "https://www.profitmoney.paicoders.com",
     git: "https://gitlab.com/paicoder/profit-money",
     youtube: "https://www.youtube.com/watch?v=qPcb186UIXQ",
     description:
