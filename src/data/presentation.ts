@@ -22,7 +22,7 @@ const presentation: Presentation = {
   title: "Hola, soy Santiago 🧔",
   // profile: "/profile.webp",
   description:
-    "Soy un *desarrollador frontend* con *2 años* de experiencia en el mundo web, enfocado actualmente en *Django y Vue.js*. Trabajo  con *Svelte, React y otros frameworks*, tengo conocimiento  en Docker y deploy de proyectos con linux, siempre en búsqueda de nuevas tecnologías. Apasionado por los viajes, listo para asumir nuevos retos.",
+    "Soy un *desarrollador fullstack* con *4 años* de experiencia, enfocado actualmente en *Django y Next.js*. Trabajo  con *Vue js, Svelte, React y otros frameworks*, tengo conocimiento  en Docker y deploy de proyectos con linux, siempre en búsqueda de nuevas tecnologías. Apasionado por los viajes, listo para asumir nuevos retos.",
   socials: [
     {
       label: "Gitlab",
