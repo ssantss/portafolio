@@ -12,16 +12,10 @@ const projects: Project[] = [
   {
     title: 'Plataforma Empresarial Siesa',
     techs: ['Node.js', 'Express', 'Vue.js', 'TypeScript', 'PostgreSQL'],
-    isComingSoon: true,
+    link: 'https://asesorexperto.oportunidades.com.co/',
+    youtube: 'https://youtu.be/qAlTeZU28H4',
     description:
       'Plataforma empresarial con arquitectura de microservicios integrada con Siesa. Implementación de autenticación con roles dinámicos, módulo comercial con sincronización en tiempo real y sistema automatizado de generación de etiquetas, logrando una reducción del 90% en tiempos de proceso.',
-  },
-  {
-    title: 'Plataforma de Apuestas Deportivas',
-    techs: ['React.js', 'Material-UI', 'Django REST Framework', 'PostgreSQL'],
-    isComingSoon: true,
-    description:
-      'Sistema completo de apuestas deportivas con gestión de usuarios y transacciones en tiempo real. Incluye sistema seguro de apuestas, API RESTful para manejo de usuarios y pagos, dashboard interactivo con estadísticas en tiempo real y optimización para alta concurrencia.',
   },
   {
     title: 'Caliche Motos Website',
@@ -32,9 +26,9 @@ const projects: Project[] = [
       'Desarrollo de sitio web moderno para empresa de repuestos de motos, implementando las últimas tecnologías de React y despliegue automatizado en Vercel para garantizar alta disponibilidad y rendimiento.',
   },
   {
-    title: 'Landing Metálicas Otalvaro',
+    title: 'Plataforma Metálicas Otalvaro',
     techs: ['Vue.js', 'Node.js', 'Express', 'PostgreSQL'],
-    isComingSoon: true,
+    youtube: 'https://youtu.be/DXWnNB5E3wM',
     description:
       'Plataforma de landing page para almacén metalmecánico con sistema de cotización integrado. Implementación de generación automática de PDFs para propuestas comerciales, logrando reducción del 85% en tiempo de elaboración de cotizaciones.',
   },
