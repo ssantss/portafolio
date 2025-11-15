@@ -3,7 +3,7 @@ import type { Project } from "@/data/projects";
 
 type Props = Project;
 
-const { title, techs, link, isComingSoon, description, git, youtube } =
+const { title, techs, link, isComingSoon, description, git, youtube, isFeatured } =
   Astro.props;
 
 const formatTechs = (values: string[]) =>
@@ -30,8 +30,9 @@ const formatTechs = (values: string[]) =>
         <div class="project-container  group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 md:flex-row md:items-center">
           <div>
             <div class="flex w-full flex-col gap-4 md:flex-row md:items-center">
-              <div class="flex">
+              <div class="flex items-center gap-2">
                 <p class="text-neutral-100">{title}</p>
+                {isFeatured && <span class="text-lg">⭐</span>}
                 <span
                   class="iconify ml-auto md:hidden"
                   data-icon="line-md:external-link"

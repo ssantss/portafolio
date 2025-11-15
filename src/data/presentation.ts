@@ -43,16 +43,16 @@ const presentation: Presentation = {
   ],
   skills: [
     {
-      label: "JavaScript",
-      icon: "js",
+      label: "Django",
+      icon: "django",
     },
     {
-      label: "HTML",
-      icon: "html5",
+      label: "Python",
+      icon: "python",
     },
     {
-      label: "CSS",
-      icon: "csswizardry",
+      label: "Next.js",
+      icon: "next-js",
     },
     {
       label: "Vue.js",
@@ -61,30 +61,6 @@ const presentation: Presentation = {
     {
       label: "Svelte",
       icon: "svelte",
-    },
-    {
-      label: "React",
-      icon: "react",
-    },
-    {
-      label: "Django",
-      icon: "django",
-    },
-    {
-      label: "Node.js",
-      icon: "node-js",
-    },
-    {
-      label: "Python",
-      icon: "python",
-    },
-    {
-      label: "Docker",
-      icon: "docker",
-    },
-    {
-      label: "Git",
-      icon: "git",
     },
     {
       label: "Linux",

@@ -6,9 +6,18 @@ export type Project = {
   youtube?: string;
   isComingSoon?: boolean;
   description?: string;
+  isFeatured?: boolean;
 };
 
 const projects: Project[] = [
+  {
+    title: 'Parqueadero.app',
+    techs: ['Next.js', 'Django', 'Python', 'React', 'PostgreSQL'],
+    link: 'https://parking.paicoders.com/',
+    isFeatured: true,
+    description:
+      'Sistema de gestión de parqueaderos en la nube con impresión de tickets en impresora térmica, tarifas flexibles por hora y minuto. Incluye generación de códigos de barras, PWA responsiva para acceso desde cualquier dispositivo y reportes en tiempo real para facilitar la operación de lotes de estacionamiento.',
+  },
   {
     title: 'Plataforma Empresarial Siesa',
     techs: ['Node.js', 'Express', 'Vue.js', 'TypeScript', 'PostgreSQL'],
@@ -37,6 +46,7 @@ const projects: Project[] = [
     techs: ['Vue.js', 'Django', 'Python', 'PostgreSQL', 'Docker', 'Next.js', 'React', 'Django REST Framework'],
     link: 'https://recibosypagos.co',
     youtube: 'https://youtu.be/XiDRYkJIyig',
+    isFeatured: true,
     description:
       'Plataforma especializada en gestión de productos y facturas. Implementación de PWA, APIs RESTful, web scraping para catálogos, y modernización de código legacy. Desarrollo de módulos en Next.js para optimizar escalabilidad y experiencia de usuario.',
   },
