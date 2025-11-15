@@ -7,7 +7,7 @@ import presentation from "@/data/presentation";
     presentation.skills.map((skill, index) => (
       <>
         <span
-          class="iconify"
+          class={`iconify skill-${skill.label.toLowerCase().replace(/\./g, '').replace(/\s+/g, '-')}`}
           data-icon={`cib:${skill.icon.toLowerCase()}`}
           data-inline="false"
         />
@@ -19,6 +19,31 @@ import presentation from "@/data/presentation";
 <style>
   .iconify {
     font-size: 1.3rem;
-    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .skill-django {
+    color: #12AA4E;
+  }
+
+  .skill-python {
+    color: #3776AB;
+  }
+
+  .skill-nextjs {
+    color: #ffffff;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
+  }
+
+  .skill-vuejs {
+    color: #4FC08D;
+  }
+
+  .skill-svelte {
+    color: #FF3E00;
+  }
+
+  .skill-linux {
+    color: #E95420;
   }
 </style>
