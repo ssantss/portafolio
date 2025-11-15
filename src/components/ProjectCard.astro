@@ -119,16 +119,17 @@ const formatTechs = (values: string[]) =>
 
       projectContainers.forEach((container) => {
         container.addEventListener("click", function (event) {
+          const target = event.target as HTMLElement;
           // Comprobar si el clic fue en uno de los otros enlaces
           if (
-            event.target.closest("a") &&
-            !event.target.classList.contains("visitar-btn")
+            target.closest("a") &&
+            !target.classList.contains("visitar-btn")
           ) {
             return; // Si se hizo clic en otro enlace, no hacer nada
           }
 
           // Encuentra el enlace "Visitar" dentro de este contenedor específico
-          const visitarLink = container.querySelector(".visitar-btn");
+          const visitarLink = container.querySelector(".visitar-btn") as HTMLElement;
           if (visitarLink) {
             visitarLink.click(); // Simula un clic en el enlace "Visitar"
           }
