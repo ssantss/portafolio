@@ -11,6 +11,15 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    title: 'NotificacionesQR',
+    techs: ['Node.js', 'Express', 'Baileys', 'Gmail API', 'Google Pub/Sub', 'SQLite', 'Canvas', 'PDFKit'],
+    link: 'https://notificacionesqr.com',
+    git: 'https://github.com/ssantss/notificadorqr',
+    isFeatured: true,
+    description:
+      'Servicio que notifica a los empleados de un negocio por WhatsApp cada vez que llega un pago QR, transferencia por llaves Bre-B o transferencia Bancolombia. Recibe emails en tiempo real via Google Pub/Sub, parsea las transacciones y envía alertas instantáneas al grupo de WhatsApp. Incluye reportes diarios, semanales y mensuales con imagen y PDF profesional.',
+  },
+  {
     title: 'Parqueadero.app',
     techs: ['Next.js', 'Django', 'Python', 'React', 'PostgreSQL'],
     link: 'https://parking.paicoders.com/',
