@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     title: 'Parqueadero.app',
     techs: ['Next.js', 'Django', 'Python', 'React', 'PostgreSQL'],
-    link: 'https://parking.paicoders.com/',
+    link: 'https://parqueadero.app/',
     isFeatured: true,
     description:
       'Sistema de gestión de parqueaderos en la nube con impresión de tickets en impresora térmica, tarifas flexibles por hora y minuto. Incluye generación de códigos de barras, PWA responsiva para acceso desde cualquier dispositivo y reportes en tiempo real para facilitar la operación de lotes de estacionamiento.',
