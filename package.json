@@ -11,7 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "cv:build": "cd cv && rendercv render cv.en.yaml -pdf ../public/santiago_jimenez_cv_en.pdf && rendercv render cv.es.yaml -pdf ../public/santiago_jimenez_cv_es.pdf && rm -rf rendercv_output"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

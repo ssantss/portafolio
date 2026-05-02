@@ -20,6 +20,7 @@ npm run dev      # localhost:4321
 npm run build    # genera dist/
 npm run preview  # sirve dist/ para verificar build
 npm run check    # astro check (types) — esto corre en CI
+npm run cv:build # regenera los PDFs del CV (es/en) en public/
 ```
 
 ## Estructura clave
@@ -33,7 +34,9 @@ npm run check    # astro check (types) — esto corre en CI
 - `src/styles/tailwind.css` — Tailwind 4 entrypoint con `@theme` para `--font-sans`
 - `src/styles/post.css` — estilos del cuerpo del post; **debe iniciar con `@reference "tailwindcss";`** para que `@apply` funcione
 - `src/components/Header.astro` — botón "Descargar CV" con dropdown ES/EN
-- `public/santiago_jimenez_cv_es.pdf` y `_en.pdf` — CVs descargables
+- `public/santiago_jimenez_cv_es.pdf` y `_en.pdf` — CVs descargables (regenerados desde `cv/`)
+- `cv/cv.es.yaml` y `cv/cv.en.yaml` — fuente del CV (RenderCV / Typst). Editar aquí, NO el PDF.
+- `cv/README.md` — guía de cuándo y cómo actualizar el CV.
 
 ## Patrones / convenciones
 
@@ -70,6 +73,23 @@ npm run check    # astro check (types) — esto corre en CI
 ## Cómo agregar un proyecto al portafolio
 
 Editar `src/data/projects.ts` y agregar una entrada al array. La estructura del objeto se ve en las entradas existentes. Sin tocar componentes.
+
+## Cómo actualizar el CV
+
+El CV es ATS-friendly, generado con [RenderCV](https://rendercv.com/) (Typst). Vive en `cv/cv.es.yaml` y `cv/cv.en.yaml`.
+
+Flujo:
+1. Editar el(los) YAML correspondiente(s).
+2. Ejecutar `npm run cv:build` (requiere `pipx install 'rendercv[full]'` instalado).
+3. Verificar visualmente los PDFs en `public/`.
+4. Commit de los YAML **y** de los PDFs (los PDFs son artefactos servidos por el sitio).
+
+Cuándo actualizar:
+- Termino un proyecto significativo (con métrica de impacto, no solo actividad).
+- Cambio de rol/responsabilidad.
+- Adquiero una skill con dominio real en producción.
+
+Tono senior: bullets con verbo + qué hice + impacto medible. Sin "apasionado", "team player", "siempre aprendiendo". Skills curado, no exhaustivo. Ver `cv/README.md` para detalle.
 
 ## Cómo publicar un post
 

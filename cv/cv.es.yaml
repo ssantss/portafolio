@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Santiago Jiménez Moncada
+  headline: Desarrollador Full Stack
+  location: Pereira, Colombia
+  email: santyjimenez92@gmail.com
+  phone: tel:+573003060003
+  website: https://ssantss.dev
+  social_networks:
+    - network: LinkedIn
+      username: ssantss
+    - network: GitHub
+      username: ssantss
+    - network: GitLab
+      username: ssantss
+  sections:
+    perfil:
+      - Ingeniero de Sistemas y Computación con 2 años de experiencia en desarrollo web full-stack. Especializado en tecnologías frontend (Vue.js, Svelte, React) y backend (Python, Django, Django Rest Framework). Buena experiencia en la creación de aplicaciones web escalables, APIs RESTful y optimización de código. Manejo sólido de Linux, Docker y entornos modernos de desarrollo. Apasionado por la innovación tecnológica y el trabajo en equipo.
+    experiencia:
+      - company: Recibos y Pagos
+        position: Desarrollador Full Stack
+        start_date: 2021-12
+        end_date: present
+        location: Pereira, Colombia
+        highlights:
+          - Desarrollo de nuevas funcionalidades.
+          - Implementación de soluciones con Vue.js, Django, Python, PostgreSQL y Docker.
+          - Integración de componentes front-end y back-end para construir aplicaciones web robustas.
+          - Desarrollo de APIs RESTful con Django Rest Framework.
+          - Mantenimiento y optimización de software, resolución eficiente de bugs y gestión proactiva de tickets.
+          - Mejora continua del rendimiento y estabilidad de las aplicaciones existentes.
+          - Modernización de código front-end, refactorización de código legacy, migración de jQuery a JavaScript nativo.
+          - Optimización del rendimiento y mejora de la mantenibilidad del código en el cliente.
+    proyectos:
+      - name: '[Profit Money](https://profitmoney.paicoders.com/)'
+        summary: Desarrollador Full Stack
+        highlights:
+          - Desarrollo full-stack de aplicación web con Svelte, Vite y Firebase.
+          - Implementación de autenticación, manejo de rutas, generación de PDF y uso de tecnologías modernas (ES9, HTML5, CSS3).
+      - name: '[Places Pin](https://places.paicoders.com/santiago)'
+        summary: Desarrollador Frontend
+        highlights:
+          - Desarrollo de aplicación web con Vue.js 3, Vuetify y Django REST Framework.
+          - Implementación de manejo de estado (Pinia), autenticación basada en tokens, integración con Google Maps y configuración con Docker.
+    educación:
+      - institution: Universidad Tecnológica de Pereira
+        area: Ingeniería de Sistemas y Computación
+        degree: Pregrado
+        location: Pereira, Colombia
+      - institution: Platzi y Coursera
+        area: 'Formación continua: 50+ cursos en línea'
+        degree: ''
+    habilidades:
+      - label: Lenguajes
+        details: JavaScript, TypeScript, Python
+      - label: Frontend
+        details: Vue.js, Svelte, React
+      - label: Backend
+        details: Django, Django REST Framework
+      - label: Bases de Datos
+        details: PostgreSQL, Firebase
+      - label: DevOps y Herramientas
+        details: Linux, Docker, Git
+    idiomas:
+      - label: Español
+        details: Nativo
+      - label: Inglés
+        details: Nivel profesional
+    referencias:
+      - name: Mauricio Aizaga
+        summary: Senior Full Stack Developer en Rejigg Inc.
+        highlights:
+          - mauricioaizaga@gmail.com
+          - '+57 316 664 3721'
+design:
+  theme: classic
+  colors:
+    name: rgb(234, 88, 12)
+    section_titles: rgb(234, 88, 12)
+    headline: rgb(64, 64, 64)
+    connections: rgb(64, 64, 64)
+    links: rgb(234, 88, 12)
+locale:
+  language: spanish
+settings:
+  current_date: today
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+  pdf_title: Santiago Jiménez Moncada - CV
