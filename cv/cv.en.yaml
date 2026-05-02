@@ -108,6 +108,13 @@ cv:
         highlights:
           - Queue system with rate limiting, group management, and AI-generated automated replies via local **Ollama**.
           - API Key authentication, OpenAPI 3.0 docs, automatic reconnection, and batch processing for scalable bulk sending.
+      - name: '[NotificacionesQR](https://notificacionesqr.com)'
+        date: '2025'
+        summary: Automated **WhatsApp** notification service for QR payments, **Bre-B** transfers, and Bancolombia transactions.
+        highlights:
+          - Real-time email ingestion via **Google Pub/Sub**, transaction parsing, and instant alerts to the business's WhatsApp group.
+          - 'Stack: Node.js/Express, Baileys, Gmail API, SQLite, Canvas, PDFKit.'
+          - Daily, weekly, and monthly reports with auto-generated images and professional PDFs.
       - name: '[4x1000 Calculator](https://www.4x1000.co/)'
         date: '2024'
         summary: Financial calculator (GMF 4x1000) built with **Svelte and TailwindCSS**.
@@ -144,17 +151,17 @@ cv:
           - Integration with multiple APIs (Apple Store, Slack, Telegram). Real-time notifications and JSON data handling.
     technical skills:
       - label: Frontend
-        details: Vue.js 2/3, Next.js, Svelte, React, TypeScript, JavaScript (ES6+), HTML5, CSS3, TailwindCSS, Vuetify, Material-UI
-      - label: State Management
-        details: Vuex, Pinia, Context API
+        details: Next.js, Vue.js 2/3, Svelte, React, Astro, TypeScript, TailwindCSS, shadcn/ui, Vuetify, Material-UI (Pinia, Vuex, Context API)
       - label: Backend
-        details: Python, Django, Django REST Framework, Node.js, Express
-      - label: Databases
-        details: PostgreSQL, Firebase, Supabase
+        details: Python, Django, Django REST Framework, Node.js, Express, FastAPI
+      - label: Databases & Cache
+        details: PostgreSQL, Redis, Firebase, Supabase
       - label: DevOps & Infrastructure
-        details: Linux, Docker, Proxmox, Git, SQL, Vercel
+        details: Linux, Docker, Proxmox, Nginx, PM2, Vercel, Cloudflare Tunnels
+      - label: Desktop, Scraping & Integrations
+        details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, NextAuth, multi-provider OAuth
       - label: AI-Assisted Development
-        details: Claude Code, Codex, Applied Prompt Engineering
+        details: Claude Code, Codex, Ollama (local AI), Applied Prompt Engineering
     education:
       - institution: Universidad Tecnológica de Pereira
         area: Systems and Computer Engineering
