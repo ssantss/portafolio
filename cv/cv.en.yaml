@@ -15,77 +15,65 @@ cv:
       username: ssantss
   sections:
     professional summary:
-      - 'Full Stack Developer with **3+ years of experience** designing and building scalable web and desktop applications. Strong frontend expertise, especially with **Next.js**, complemented by experience in **Vue.js, React, Svelte, and Electron**. On the backend, I work with **Python (Django) and Node.js (Express)**, focused on building robust RESTful APIs.'
-      - Solid hands-on experience with **Linux, Docker**, application deployment, and system administration with **Proxmox**. I actively integrate **AI-assisted development tools (Claude Code, Codex)** into my workflow, with applied experience in **prompt engineering** for code generation, refactoring, and code review.
-      - My approach is grounded in adaptability to new technologies, effective collaboration in cross-functional teams, and delivering innovative, high-impact solutions.
+      - 'Full Stack Developer with **3+ years shipping multi-tenant production platforms** for LatAm SMBs and regulated sports betting in Colombia. Expert in **Django + Next.js**, with secondary stack in Vue, Svelte, and Electron. I build end-to-end: from scraping and RESTful APIs to POS hardware (thermal printers) and WhatsApp integrations.'
+      - Solid hands-on experience with **Linux, Docker**, and system administration with **Proxmox**. I actively integrate **Claude Code and Codex** into my workflow, with applied prompt engineering for code generation, refactoring, and code review.
     professional experience:
       - company: Vatio Libre (Contractor)
         position: Full-Stack Developer
         start_date: 2026-01
         end_date: present
         location: New Jersey, USA
-        summary: 'Built and shipped the **Tesla Dashboard**, a management and monitoring platform for Tesla electric vehicles with direct integration to the Tesla Owner API. Stack: Vue.js, Python (Django), Tesla Owner API, OAuth.'
+        summary: 'Built end-to-end the **Tesla Dashboard**, a management and monitoring platform for Tesla electric vehicles with direct integration to the Tesla Owner API. Stack: Vue.js, Python (Django), Tesla Owner API, OAuth.'
         highlights:
           - 'Built the entire Tesla Dashboard from scratch: image gallery with touch navigation, interactive VIN decoder, order system with logistics timeline, and real-time delivery panel with ETA.'
           - Redesigned the OAuth authentication flow with Tesla Owner API, simplifying a 5-step process into a phase-based interface with automatic popup monitoring.
-          - Shipped an enriched orders panel with financing components, delivery tasks, shareable narrative (Web Share API), and a unified JSON viewer.
-          - Full internationalization system (Spanish/English) with automatic language detection.
+          - Owned the enriched orders panel with financing components, delivery tasks, shareable narrative (Web Share API), and a unified JSON viewer.
+          - Implemented full internationalization (Spanish/English) with automatic language detection.
       - company: Sileo (Freelance)
         position: Full-Stack Developer
         start_date: 2024-10
         end_date: 2025-05
         location: Pereira, Colombia
-        summary: 'Built and deployed a complete enterprise platform with a distributed architecture. Stack: Node.js/Express, Vue.js/TypeScript, PostgreSQL.'
+        summary: 'Led the development of a complete enterprise platform with a distributed architecture. Stack: Node.js/Express, Vue.js/TypeScript, PostgreSQL.'
         highlights:
-          - Distributed microservices architecture for integration with the Siesa system.
-          - Authentication and user management system with dynamic roles.
-          - Commercial module with real-time synchronization and automated label generation.
-          - **90% reduction in label generation time** through PDF automation.
-          - Successfully deployed across multiple branches with high scalability.
+          - Designed distributed microservices architecture for integration with the Siesa system.
+          - Built authentication and user management system with dynamic roles.
+          - Owned the commercial module with real-time synchronization and automated label generation.
+          - **90% reduction in label generation time** via PDF automation.
       - company: Sports Betting Platform (Freelance)
         position: Full-Stack Developer
         start_date: 2024-07
         end_date: 2025-04
         location: Medellín, Colombia
-        summary: 'Built a complete sports betting platform, including user management, real-time transaction processing, and an admin panel. Stack: React.js, Material-UI, Django REST Framework, PostgreSQL.'
+        summary: 'Built end-to-end a complete sports betting platform, including user management, real-time transaction processing, and an admin panel. Stack: React.js, Material-UI, Django REST Framework, PostgreSQL.'
         highlights:
-          - Secure betting system with financial transaction handling.
-          - RESTful API for user, betting, and payment management.
-          - Responsive interface with interactive dashboard and real-time statistics.
-          - Performance and scalability optimization for multiple concurrent users.
+          - Designed a secure betting system with transactional reconciliation and idempotent payment handling.
+          - Built RESTful API for user, betting, and payment management.
+          - Designed responsive interface with interactive dashboard and real-time statistics.
+          - Optimized performance and scalability for multiple concurrent users.
       - company: Metálicas Otálvaro SAS
         position: Full-Stack Developer
         start_date: 2024-05
         end_date: 2024-07
         location: Pereira, Colombia
-        summary: 'Landing page platform for a metalworking workshop with an integrated quoting system. Stack: Vue.js, Node.js/Express, PostgreSQL.'
+        summary: 'Built a landing page platform for a metalworking workshop with an integrated quoting system. Stack: Vue.js, Node.js/Express, PostgreSQL.'
         highlights:
           - Designed and built an optimized landing page with high usability and responsive design.
-          - Integrated quoting system with automatic PDF generation for commercial proposals.
-          - Express backend architecture for efficient request handling and PostgreSQL data storage.
-          - **85% reduction in quote preparation time** through PDF automation.
-      - company: Caliche Motos
-        position: Full-Stack Developer
-        start_date: 2025-02
-        end_date: 2025-02
-        location: Pereira, Colombia
-        summary: 'Modern website for a motorcycle parts company. Stack: Next.js, React 19, TailwindCSS.'
-        highlights:
-          - Automated deployment on Vercel.
+          - Owned the integrated quoting system with automatic PDF generation for commercial proposals.
+          - Designed Express backend architecture for efficient request handling and PostgreSQL storage.
+          - **85% reduction in quote preparation time** via PDF automation.
       - company: Recibosypagos.co
         position: Full-Stack Developer
         start_date: 2021-12
         end_date: 2025-01
         location: Pereira, Colombia
-        summary: 'Development and maintenance of a platform specialized in product and invoice management. Stack: Vue.js, Django, Python, PostgreSQL, Docker, Next.js.'
+        summary: 'Led development and maintenance of a platform specialized in product and invoice management. Stack: Vue.js, Django, Python, PostgreSQL, Docker, Next.js.'
         highlights:
-          - Full-stack implementations using Vue.js, Django, Python, PostgreSQL, and Docker.
-          - Successful transformation of the platform into a **Progressive Web App (PWA)**.
+          - Migrated the platform to a **Progressive Web App (PWA)**.
           - Built RESTful APIs with Django REST Framework and integrated front-end with back-end components.
-          - New **Next.js** modules to improve scalability and platform functionality.
-          - **Web scraping with Django** to extract product catalog data from external e-commerce platforms.
-          - 'Front-end modernization: **migrated legacy jQuery code to React**, optimized performance, and improved client-side maintainability.'
-          - Efficient bug resolution and proactive incident ticket management.
+          - Owned new **Next.js** modules to scale functionality and improve user experience.
+          - Implemented **web scraping with Django** to extract product catalog data from external e-commerce platforms.
+          - Refactored legacy code, **migrating jQuery to React**, optimizing performance and client-side maintainability.
     projects:
       - name: '[Snowify](https://snowify.cc/) — Open Source Contributor'
         start_date: 2025-01
@@ -104,10 +92,10 @@ cv:
       - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
-        summary: RESTful service built with **Node.js/Express and Baileys** for automated sending of individual and bulk WhatsApp messages.
+        summary: Built a RESTful service with **Node.js/Express and Baileys** for automated sending of individual and bulk WhatsApp messages.
         highlights:
-          - Queue system with rate limiting, group management, and AI-generated automated replies via local **Ollama**.
-          - API Key authentication, OpenAPI 3.0 docs, automatic reconnection, and batch processing for scalable bulk sending.
+          - Designed queue system with rate limiting, group management, and AI-generated automated replies via local **Ollama**.
+          - API Key authentication, OpenAPI 3.0 docs, automatic reconnection, and scalable batch processing.
       - name: '[NotificacionesQR](https://notificacionesqr.com)'
         date: '2025'
         summary: Automated **WhatsApp** notification service for QR payments, **Bre-B** transfers, and Bancolombia transactions.
@@ -121,29 +109,18 @@ cv:
         highlights:
           - Reactive state, history with local persistence, dark/light mode.
           - Mobile-optimized with PWA install support.
-      - name: Movie Ticket Generator
-        date: '2024'
-        summary: Cine Colombia simulator built with **React and Material-UI**.
-        highlights:
-          - Real-time showtimes integrating external APIs (Cine Colombia, OMDB).
-          - Data persistence with Supabase, virtual ticket system, and movie progress visualization.
       - name: Scanner Audifarma
         date: '2024'
         summary: Document digitization system built with **Vue.js and Dynamsoft Web TWAIN**.
         highlights:
-          - Real-time web scanner integrating local hardware, image processing (rotation, preview, thumbnails).
-          - PDF conversion, document upload with parameter validation, and server integration via Axios.
+          - Real-time web scanner integrating local hardware, image processing, and PDF conversion.
+          - Parameter validation and server integration via Axios.
       - name: '[Profit Money](https://profitmoney.paicoders.com/)'
         date: '2024'
         summary: Web platform built with **Svelte and Firebase** for personal finance management.
         highlights:
           - Investment, loan, and savings tracking with automatic interest, amortization, and tax calculations.
           - PDF reporting, real-time dashboard, and Firebase Firestore sync. Google authentication.
-      - name: Places Pin
-        date: '2023'
-        summary: Web app built with **Vue.js 3, Vuetify, and Django REST Framework**.
-        highlights:
-          - State management (Pinia), token-based authentication, Google Maps integration, and Docker setup.
       - name: iPhone Stock Checker
         date: '2022'
         summary: Automated **Python** bot for Apple Store inventory monitoring.
@@ -170,23 +147,14 @@ cv:
         start_date: 2009-01
         end_date: 2014-12
     certifications:
-      - bullet: '**Platzi** — 29 courses in Python, JavaScript, Vue.js, Git, databases, and development environments. Certificates at [platzi.com/p/saants](https://platzi.com/p/saants).'
+      - bullet: 'Selected Platzi tracks — Python, JavaScript, Vue.js, databases. Certificates at [platzi.com/p/saants](https://platzi.com/p/saants).'
     languages:
       - label: Spanish
         details: Native
       - label: English
         details: B2 (Upper-Intermediate)
     references:
-      - name: Mauricio Aizaga
-        summary: Senior Full Stack Developer at Rejigg Inc.
-        highlights:
-          - 'Email: mauricioaizaga@gmail.com'
-          - 'Phone: +57 316 664 3721'
-      - name: Juan Esteban Peláez Martínez
-        summary: Senior iOS/Android Developer at Ualá.
-        highlights:
-          - 'Email: juanes413@gmail.com'
-          - 'Phone: +57 314 724 0262'
+      - bullet: Available upon request.
 design:
   theme: engineeringresumes
 locale:

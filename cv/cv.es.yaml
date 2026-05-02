@@ -15,77 +15,65 @@ cv:
       username: ssantss
   sections:
     resumen profesional:
-      - 'Desarrollador Full Stack con más de **3 años de experiencia** en el diseño y desarrollo de aplicaciones web y de escritorio escalables. Sólido dominio de tecnologías frontend, especialmente **Next.js**, complementado por experiencia en **Vue.js, React, Svelte y Electron**. En el backend, trabajo con **Python (Django) y Node.js (Express)**, enfocado en la creación de APIs RESTful robustas.'
-      - 'Sólidos conocimientos en **Linux, Docker**, despliegue de aplicaciones y administración de sistemas con **Proxmox**. Incorporo activamente herramientas de desarrollo asistido por IA (**Claude Code, Codex**) en mi flujo de trabajo, con experiencia en **prompt engineering** aplicado a generación de código, refactoring y code review.'
-      - Mi enfoque se basa en la adaptabilidad a nuevas tecnologías, la colaboración efectiva en equipos multidisciplinarios y la entrega de soluciones innovadoras de alto impacto.
+      - 'Desarrollador Full Stack con **3+ años shipping plataformas multi-tenant en producción** para PyMEs LatAm y apuestas deportivas reguladas en Colombia. Experto en **Django + Next.js**, con stack secundario en Vue, Svelte y Electron. Construyo end-to-end: desde scraping y APIs RESTful hasta hardware POS (impresoras térmicas) e integraciones WhatsApp.'
+      - Sólidos conocimientos en **Linux, Docker** y administración de sistemas con **Proxmox**. Incorporo activamente **Claude Code y Codex** en mi flujo de trabajo, con prompt engineering aplicado a generación de código, refactoring y code review.
     experiencia profesional:
       - company: Vatio Libre (Contractor)
         position: Desarrollador Full-Stack
         start_date: 2026-01
         end_date: present
         location: New Jersey, USA
-        summary: 'Desarrollo e implementación del **Tesla Dashboard**, plataforma de gestión y monitoreo de vehículos eléctricos Tesla con integración directa a la Tesla Owner API. Stack: Vue.js, Python (Django), Tesla Owner API, OAuth.'
+        summary: 'Construí end-to-end el **Tesla Dashboard**, plataforma de gestión y monitoreo de vehículos eléctricos Tesla con integración directa a la Tesla Owner API. Stack: Vue.js, Python (Django), Tesla Owner API, OAuth.'
         highlights:
-          - 'Desarrollo del Tesla Dashboard completo desde cero: galería de imágenes con navegación táctil, decodificador interactivo de VIN, sistema de órdenes con timeline logístico y panel de delivery con ETA en tiempo real.'
-          - Rediseño del flujo de autenticación OAuth con Tesla Owner API, simplificando un proceso de 5 pasos a una interfaz basada en fases con monitoreo automático de popup.
-          - Implementación de panel de órdenes enriquecido con componentes de financiamiento, tareas de entrega, narrativa compartible (Web Share API) y visor JSON unificado.
-          - Sistema de internacionalización completo (español/inglés) con detección automática de idioma.
+          - 'Construí el Tesla Dashboard completo desde cero: galería de imágenes con navegación táctil, decodificador interactivo de VIN, sistema de órdenes con timeline logístico y panel de delivery con ETA en tiempo real.'
+          - Rediseñé el flujo de autenticación OAuth con Tesla Owner API, simplificando un proceso de 5 pasos a una interfaz basada en fases con monitoreo automático de popup.
+          - Owní el panel de órdenes enriquecido con componentes de financiamiento, tareas de entrega, narrativa compartible (Web Share API) y visor JSON unificado.
+          - Implementé sistema de internacionalización completo (español/inglés) con detección automática de idioma.
       - company: Sileo (Freelance)
         position: Desarrollador Full-Stack
         start_date: 2024-10
         end_date: 2025-05
         location: Pereira, Colombia
-        summary: 'Desarrollo e implementación de una plataforma empresarial completa con arquitectura distribuida. Stack: Node.js/Express, Vue.js/TypeScript, PostgreSQL.'
+        summary: 'Lideré el desarrollo de una plataforma empresarial completa con arquitectura distribuida. Stack: Node.js/Express, Vue.js/TypeScript, PostgreSQL.'
         highlights:
-          - Arquitectura distribuida con microservicios para integración con sistema Siesa.
-          - Sistema de autenticación y gestión de usuarios con roles dinámicos.
-          - Módulo comercial con sincronización en tiempo real y generación automatizada de etiquetas.
+          - Diseñé arquitectura distribuida con microservicios para integración con sistema Siesa.
+          - Construí sistema de autenticación y gestión de usuarios con roles dinámicos.
+          - Owní módulo comercial con sincronización en tiempo real y generación automatizada de etiquetas.
           - Reducción del **90% en tiempo de generación de etiquetas** mediante automatización con PDF.
-          - Despliegue exitoso en múltiples sucursales con alta escalabilidad.
       - company: Plataforma de Apuestas Deportivas (Freelance)
         position: Desarrollador Full-Stack
         start_date: 2024-07
         end_date: 2025-04
         location: Medellín, Colombia
-        summary: 'Desarrollo e implementación de una plataforma completa de apuestas deportivas, incluyendo sistema de gestión de usuarios, procesamiento de transacciones en tiempo real y panel administrativo. Stack: React.js, Material-UI, Django REST Framework, PostgreSQL.'
+        summary: 'Construí end-to-end una plataforma completa de apuestas deportivas, incluyendo gestión de usuarios, procesamiento de transacciones en tiempo real y panel administrativo. Stack: React.js, Material-UI, Django REST Framework, PostgreSQL.'
         highlights:
-          - Sistema seguro de apuestas con gestión de transacciones financieras.
-          - API RESTful para manejo de usuarios, apuestas y pagos.
-          - Interfaz responsive con dashboard interactivo y estadísticas en tiempo real.
-          - Optimización de rendimiento y escalabilidad para múltiples usuarios concurrentes.
+          - Diseñé sistema seguro de apuestas con conciliación transaccional y manejo idempotente de pagos.
+          - Construí API RESTful para gestión de usuarios, apuestas y pagos.
+          - Diseñé interfaz responsive con dashboard interactivo y estadísticas en tiempo real.
+          - Optimicé rendimiento y escalabilidad para soportar múltiples usuarios concurrentes.
       - company: Metálicas Otálvaro SAS
         position: Desarrollador Full-Stack
         start_date: 2024-05
         end_date: 2024-07
         location: Pereira, Colombia
-        summary: 'Plataforma de landing page para almacén metalmecánico con sistema de cotización integrado. Stack: Vue.js, Node.js/Express, PostgreSQL.'
+        summary: 'Construí plataforma de landing page para almacén metalmecánico con sistema de cotización integrado. Stack: Vue.js, Node.js/Express, PostgreSQL.'
         highlights:
-          - Diseño y desarrollo de landing page optimizada con alta usabilidad y diseño responsivo.
-          - Sistema de cotización integrado con generación automática de PDFs para propuestas comerciales.
-          - Arquitectura backend con Express para manejo eficiente de solicitudes y almacenamiento en PostgreSQL.
+          - Diseñé y construí landing optimizada con alta usabilidad y diseño responsivo.
+          - Owní el sistema de cotización integrado con generación automática de PDFs para propuestas comerciales.
+          - Diseñé arquitectura backend con Express para manejo eficiente de solicitudes y almacenamiento en PostgreSQL.
           - Reducción del **85% en el tiempo de elaboración de cotizaciones** mediante automatización de PDFs.
-      - company: Caliche Motos
-        position: Desarrollador Full-Stack
-        start_date: 2025-02
-        end_date: 2025-02
-        location: Pereira, Colombia
-        summary: 'Sitio web moderno para empresa de repuestos de motos. Stack: Next.js, React 19, TailwindCSS.'
-        highlights:
-          - Despliegue automatizado en Vercel.
       - company: Recibosypagos.co
         position: Desarrollador Full-Stack
         start_date: 2021-12
         end_date: 2025-01
         location: Pereira, Colombia
-        summary: 'Desarrollo y mantenimiento de plataforma especializada en gestión de productos y facturas. Stack: Vue.js, Django, Python, PostgreSQL, Docker, Next.js.'
+        summary: 'Lideré desarrollo y mantenimiento de plataforma especializada en gestión de productos y facturas. Stack: Vue.js, Django, Python, PostgreSQL, Docker, Next.js.'
         highlights:
-          - Implementación de soluciones full-stack con Vue.js, Django, Python, PostgreSQL y Docker.
-          - Transformación exitosa de la plataforma en **Progressive Web App (PWA)**.
-          - Desarrollo de APIs RESTful con Django REST Framework e integración de componentes front-end y back-end.
-          - Creación de módulos en **Next.js** para optimizar la escalabilidad y funcionalidad de la plataforma.
-          - Implementación de **web scraping con Django** para extraer información de plataformas de venta de productos a catálogo.
-          - 'Modernización de código front-end: **refactorización de jQuery a React**, optimización del rendimiento y mejora de la mantenibilidad del código cliente.'
-          - Resolución eficiente de errores y gestión proactiva de tickets de incidencias.
+          - Migré la plataforma a **Progressive Web App (PWA)**.
+          - Construí APIs RESTful con Django REST Framework e integré componentes front-end y back-end.
+          - Owní módulos en **Next.js** para escalar funcionalidad y mejorar la experiencia de usuario.
+          - Implementé **web scraping con Django** para extraer información de plataformas de venta de productos a catálogo.
+          - Refactoricé código legacy migrando de **jQuery a React**, optimizando rendimiento y mantenibilidad del cliente.
     proyectos:
       - name: '[Snowify](https://snowify.cc/) — Contribuidor Open Source'
         start_date: 2025-01
@@ -104,10 +92,10 @@ cv:
       - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
-        summary: Servicio RESTful con **Node.js/Express y Baileys** para envío automatizado de mensajes individuales y masivos a números WhatsApp.
+        summary: Construí servicio RESTful con **Node.js/Express y Baileys** para envío automatizado de mensajes individuales y masivos a números WhatsApp.
         highlights:
-          - Sistema de colas con rate limiting, gestión de grupos y generación automática de respuestas mediante IA local con **Ollama**.
-          - Autenticación por API Key, documentación OpenAPI 3.0, reconexión automática y batch processing para envíos masivos escalables.
+          - Diseñé sistema de colas con rate limiting, gestión de grupos y respuestas automáticas mediante IA local con **Ollama**.
+          - Autenticación por API Key, documentación OpenAPI 3.0, reconexión automática y batch processing escalable.
       - name: '[NotificacionesQR](https://notificacionesqr.com)'
         date: '2025'
         summary: Servicio de notificaciones automáticas vía **WhatsApp** para pagos QR, transferencias **Bre-B** y Bancolombia.
@@ -121,29 +109,18 @@ cv:
         highlights:
           - Estados reactivos, sistema de historial con persistencia local, modo oscuro/claro.
           - Optimizada para dispositivos móviles con instalación como PWA.
-      - name: Movie Ticket Generator
-        date: '2024'
-        summary: Simulador de Cine Colombia con **React y Material-UI**.
-        highlights:
-          - Sistema de cartelera en tiempo real con integración a APIs externas (Cine Colombia, OMDB).
-          - Persistencia de datos con Supabase, sistema de tickets virtuales y visualización de progreso de películas.
       - name: Scanner Audifarma
         date: '2024'
         summary: Sistema de digitalización de documentos con **Vue.js y Dynamsoft Web TWAIN**.
         highlights:
-          - Escáner web en tiempo real con integración de hardware local, procesamiento de imágenes (rotación, vista previa, miniaturas).
-          - Conversión a PDF, sistema de carga de documentos con validación de parámetros e integración con servidor mediante Axios.
+          - Escáner web en tiempo real con integración de hardware local, procesamiento de imágenes y conversión a PDF.
+          - Validación de parámetros e integración con servidor mediante Axios.
       - name: '[Profit Money](https://profitmoney.paicoders.com/)'
         date: '2024'
         summary: Plataforma web con **Svelte y Firebase** para gestión de finanzas personales.
         highlights:
           - Control de inversiones, préstamos y ahorros con cálculos automáticos de intereses, amortizaciones y retención de impuestos.
-          - Generación de reportes PDF, dashboard en tiempo real y sincronización con Firebase Firestore. Autenticación con Google.
-      - name: Places Pin
-        date: '2023'
-        summary: Aplicación web con **Vue.js 3, Vuetify y Django REST Framework**.
-        highlights:
-          - State management (Pinia), autenticación por tokens, integración de Google Maps y configuración con Docker.
+          - Reportes PDF, dashboard en tiempo real y sincronización con Firebase Firestore. Autenticación con Google.
       - name: iPhone Stock Checker
         date: '2022'
         summary: Bot automatizado en **Python** para monitoreo de inventario de Apple Store.
@@ -170,23 +147,14 @@ cv:
         start_date: 2009-01
         end_date: 2014-12
     certificaciones:
-      - bullet: '**Platzi** — 29 cursos en Python, JavaScript, Vue.js, Git, bases de datos y entornos de desarrollo. Certificados en [platzi.com/p/saants](https://platzi.com/p/saants).'
+      - bullet: 'Selected Platzi tracks — Python, JavaScript, Vue.js, bases de datos. Certificados en [platzi.com/p/saants](https://platzi.com/p/saants).'
     idiomas:
       - label: Español
         details: Nativo
       - label: Inglés
         details: B2 (Upper-Intermediate)
     referencias:
-      - name: Mauricio Aizaga
-        summary: Senior Full Stack Developer en Rejigg Inc.
-        highlights:
-          - 'Email: mauricioaizaga@gmail.com'
-          - 'Tel: +57 316 664 3721'
-      - name: Juan Esteban Peláez Martínez
-        summary: Senior iOS/Android Developer en Ualá.
-        highlights:
-          - 'Email: juanes413@gmail.com'
-          - 'Tel: +57 314 724 0262'
+      - bullet: Disponibles a solicitud.
 design:
   theme: engineeringresumes
 locale:
