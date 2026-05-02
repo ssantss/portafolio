@@ -19,7 +19,7 @@ cv:
       - 'Sólidos conocimientos en **Linux, Docker**, despliegue de aplicaciones y administración de sistemas con **Proxmox**. Incorporo activamente herramientas de desarrollo asistido por IA (**Claude Code, Codex**) en mi flujo de trabajo, con experiencia en **prompt engineering** aplicado a generación de código, refactoring y code review.'
       - Mi enfoque se basa en la adaptabilidad a nuevas tecnologías, la colaboración efectiva en equipos multidisciplinarios y la entrega de soluciones innovadoras de alto impacto.
     experiencia profesional:
-      - company: Vatio Libre
+      - company: Vatio Libre (Contractor)
         position: Desarrollador Full-Stack
         start_date: 2026-01
         end_date: present
@@ -30,7 +30,7 @@ cv:
           - Rediseño del flujo de autenticación OAuth con Tesla Owner API, simplificando un proceso de 5 pasos a una interfaz basada en fases con monitoreo automático de popup.
           - Implementación de panel de órdenes enriquecido con componentes de financiamiento, tareas de entrega, narrativa compartible (Web Share API) y visor JSON unificado.
           - Sistema de internacionalización completo (español/inglés) con detección automática de idioma.
-      - company: Juan Esteban Peláez Martínez (Freelance)
+      - company: Sileo (Freelance)
         position: Desarrollador Full-Stack
         start_date: 2024-10
         end_date: 2025-05
@@ -42,7 +42,7 @@ cv:
           - Módulo comercial con sincronización en tiempo real y generación automatizada de etiquetas.
           - Reducción del **90% en tiempo de generación de etiquetas** mediante automatización con PDF.
           - Despliegue exitoso en múltiples sucursales con alta escalabilidad.
-      - company: Hernán Alonso Alzate (Freelance)
+      - company: Plataforma de Apuestas Deportivas (Freelance)
         position: Desarrollador Full-Stack
         start_date: 2024-07
         end_date: 2025-04
@@ -158,20 +158,17 @@ cv:
     educación:
       - institution: Universidad Tecnológica de Pereira
         area: Ingeniería de Sistemas y Computación
-        degree: Pregrado
+        degree: BSc
         location: Pereira, Colombia
-        date: '2014'
-      - institution: Platzi
-        area: Formación continua
-        degree: ''
-        highlights:
-          - 29 cursos especializados en Python, JavaScript, HTML, CSS, Vue.js, Git, bases de datos y entornos de desarrollo.
-          - 'Certificados disponibles en: [platzi.com/p/saants](https://platzi.com/p/saants).'
+        start_date: 2009-01
+        end_date: 2014-12
+    certificaciones:
+      - bullet: '**Platzi** — 29 cursos en Python, JavaScript, Vue.js, Git, bases de datos y entornos de desarrollo. Certificados en [platzi.com/p/saants](https://platzi.com/p/saants).'
     idiomas:
       - label: Español
         details: Nativo
       - label: Inglés
-        details: B1 (Intermedio)
+        details: B2 (Upper-Intermediate)
     referencias:
       - name: Mauricio Aizaga
         summary: Senior Full Stack Developer en Rejigg Inc.
@@ -184,7 +181,7 @@ cv:
           - 'Email: juanes413@gmail.com'
           - 'Tel: +57 314 724 0262'
 design:
-  theme: classic
+  theme: engineeringresumes
   colors:
     name: rgb(234, 88, 12)
     section_titles: rgb(234, 88, 12)
