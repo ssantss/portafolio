@@ -87,7 +87,7 @@ cv:
           - 'Front-end modernization: **migrated legacy jQuery code to React**, optimized performance, and improved client-side maintainability.'
           - Efficient bug resolution and proactive incident ticket management.
     projects:
-      - name: 'Snowify — Open Source Contributor'
+      - name: '[Snowify](https://snowify.cc/) — Open Source Contributor'
         start_date: 2025-01
         end_date: present
         summary: Open source desktop music player based on Electron. **25 PRs merged upstream**, covering full features, bug fixes, and architectural refactors.

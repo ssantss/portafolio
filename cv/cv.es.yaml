@@ -87,7 +87,7 @@ cv:
           - 'Modernización de código front-end: **refactorización de jQuery a React**, optimización del rendimiento y mejora de la mantenibilidad del código cliente.'
           - Resolución eficiente de errores y gestión proactiva de tickets de incidencias.
     proyectos:
-      - name: 'Snowify — Contribuidor Open Source'
+      - name: '[Snowify](https://snowify.cc/) — Contribuidor Open Source'
         start_date: 2025-01
         end_date: present
         summary: Reproductor de música de escritorio open source basado en Electron. **25 PRs mergeados al proyecto upstream**, abarcando features completos, bug fixes y refactors arquitectónicos.
