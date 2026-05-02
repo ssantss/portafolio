@@ -101,14 +101,14 @@ cv:
         highlights:
           - Generación de códigos de barras, PWA responsiva para acceso desde cualquier dispositivo.
           - Reportes en tiempo real para facilitar la operación de lotes de estacionamiento.
-      - name: WhatsApp Messages API
+      - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
         summary: Servicio RESTful con **Node.js/Express y Baileys** para envío automatizado de mensajes individuales y masivos a números WhatsApp.
         highlights:
           - Sistema de colas con rate limiting, gestión de grupos y generación automática de respuestas mediante IA local con **Ollama**.
           - Autenticación por API Key, documentación OpenAPI 3.0, reconexión automática y batch processing para envíos masivos escalables.
-      - name: Calculadora 4x1000
+      - name: '[Calculadora 4x1000](https://www.4x1000.co/)'
         date: '2024'
         summary: Calculadora financiera (GMF 4x1000) con **Svelte y TailwindCSS**.
         highlights:
@@ -126,7 +126,7 @@ cv:
         highlights:
           - Escáner web en tiempo real con integración de hardware local, procesamiento de imágenes (rotación, vista previa, miniaturas).
           - Conversión a PDF, sistema de carga de documentos con validación de parámetros e integración con servidor mediante Axios.
-      - name: Profit Money
+      - name: '[Profit Money](https://profitmoney.paicoders.com/)'
         date: '2024'
         summary: Plataforma web con **Svelte y Firebase** para gestión de finanzas personales.
         highlights:

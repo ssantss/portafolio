@@ -101,14 +101,14 @@ cv:
         highlights:
           - Barcode generation, responsive PWA for any-device access.
           - Real-time reports to streamline parking lot operations.
-      - name: WhatsApp Messages API
+      - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
         summary: RESTful service built with **Node.js/Express and Baileys** for automated sending of individual and bulk WhatsApp messages.
         highlights:
           - Queue system with rate limiting, group management, and AI-generated automated replies via local **Ollama**.
           - API Key authentication, OpenAPI 3.0 docs, automatic reconnection, and batch processing for scalable bulk sending.
-      - name: '4x1000 Calculator'
+      - name: '[4x1000 Calculator](https://www.4x1000.co/)'
         date: '2024'
         summary: Financial calculator (GMF 4x1000) built with **Svelte and TailwindCSS**.
         highlights:
@@ -126,7 +126,7 @@ cv:
         highlights:
           - Real-time web scanner integrating local hardware, image processing (rotation, preview, thumbnails).
           - PDF conversion, document upload with parameter validation, and server integration via Axios.
-      - name: Profit Money
+      - name: '[Profit Money](https://profitmoney.paicoders.com/)'
         date: '2024'
         summary: Web platform built with **Svelte and Firebase** for personal finance management.
         highlights:
