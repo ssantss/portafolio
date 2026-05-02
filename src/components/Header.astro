@@ -35,14 +35,17 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
   const button = document.getElementById('cv-options-menu');
   const dropdownMenu = document.getElementById('cv-dropdown-menu');
 
-  button.addEventListener('click', function(event) {
-    dropdownMenu.classList.toggle('hidden');
-    event.stopPropagation(); 
-  });
+  if (button && dropdownMenu) {
+    button.addEventListener('click', function(event) {
+      dropdownMenu.classList.toggle('hidden');
+      event.stopPropagation();
+    });
 
-  document.addEventListener('click', function(event) {
-    if (!dropdownMenu.contains(event.target) && !button.contains(event.target)) {
-      dropdownMenu.classList.add('hidden');
-    }
-  });
+    document.addEventListener('click', function(event) {
+      const target = event.target as Node | null;
+      if (target && !dropdownMenu.contains(target) && !button.contains(target)) {
+        dropdownMenu.classList.add('hidden');
+      }
+    });
+  }
 </script>
