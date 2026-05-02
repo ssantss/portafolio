@@ -15,7 +15,7 @@ cv:
       username: ssantss
   sections:
     professional summary:
-      - 'Full Stack Developer with **3+ years shipping multi-tenant production platforms** for LatAm SMBs and regulated sports betting in Colombia. Expert in **Django + Next.js**, with secondary stack in Vue, Svelte, and Electron. I build end-to-end: from scraping and RESTful APIs to POS hardware (thermal printers) and WhatsApp integrations.'
+      - 'Full Stack Developer with **4+ years shipping multi-tenant production platforms** for LatAm SMBs and regulated sports betting in Colombia. Expert in **Django + Next.js**, with secondary stack in Vue, Svelte, and Electron. I build end-to-end: from scraping and RESTful APIs to POS hardware (thermal printers) and WhatsApp integrations.'
       - Solid hands-on experience with **Linux, Docker**, and system administration with **Proxmox**. I actively integrate **Claude Code and Codex** into my workflow, with applied prompt engineering for code generation, refactoring, and code review.
     professional experience:
       - company: Vatio Libre (Contractor)
