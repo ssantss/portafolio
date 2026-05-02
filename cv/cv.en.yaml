@@ -182,12 +182,6 @@ cv:
           - 'Phone: +57 314 724 0262'
 design:
   theme: engineeringresumes
-  colors:
-    name: rgb(234, 88, 12)
-    section_titles: rgb(234, 88, 12)
-    headline: rgb(64, 64, 64)
-    connections: rgb(64, 64, 64)
-    links: rgb(234, 88, 12)
 locale:
   language: english
 settings:
