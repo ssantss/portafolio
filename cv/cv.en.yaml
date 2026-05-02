@@ -22,7 +22,7 @@ cv:
         position: Full-Stack Developer
         start_date: 2026-01
         end_date: present
-        location: New Jersey, USA
+        location: New Jersey, USA (Remote)
         summary: 'Built end-to-end the **Tesla Dashboard**, a management and monitoring platform for Tesla electric vehicles with direct integration to the Tesla Owner API. Stack: Vue.js, Python (Django), Tesla Owner API, OAuth.'
         highlights:
           - 'Built the entire Tesla Dashboard from scratch: image gallery with touch navigation, interactive VIN decoder, order system with logistics timeline, and real-time delivery panel with ETA.'
@@ -36,10 +36,10 @@ cv:
         location: Pereira, Colombia
         summary: 'Led the development of a complete enterprise platform with a distributed architecture. Stack: Node.js/Express, Vue.js/TypeScript, PostgreSQL.'
         highlights:
-          - Designed distributed microservices architecture for integration with the Siesa system.
+          - Designed distributed microservices architecture for integration with the Siesa system (Colombian ERP).
           - Built authentication and user management system with dynamic roles.
           - Owned the commercial module with real-time synchronization and automated label generation.
-          - **90% reduction in label generation time** via PDF automation.
+          - Reduced **label generation time by 90%** via PDF automation.
       - company: Sports Betting Platform (Freelance)
         position: Full-Stack Developer
         start_date: 2024-07
@@ -56,12 +56,12 @@ cv:
         start_date: 2024-05
         end_date: 2024-07
         location: Pereira, Colombia
-        summary: 'Built a landing page platform for a metalworking workshop with an integrated quoting system. Stack: Vue.js, Node.js/Express, PostgreSQL.'
+        summary: 'Built a landing page platform for a metalworking supply store with an integrated quoting system. Stack: Vue.js, Node.js/Express, PostgreSQL.'
         highlights:
           - Designed and built an optimized landing page with high usability and responsive design.
           - Owned the integrated quoting system with automatic PDF generation for commercial proposals.
           - Designed Express backend architecture for efficient request handling and PostgreSQL storage.
-          - **85% reduction in quote preparation time** via PDF automation.
+          - Reduced **quote preparation time by 85%** via PDF automation.
       - company: Recibosypagos.co
         position: Full-Stack Developer
         start_date: 2021-12
@@ -81,7 +81,7 @@ cv:
         summary: Open source desktop music player based on Electron. **25 PRs merged upstream**, covering full features, bug fixes, and architectural refactors.
         highlights:
           - 'Key contributions: gapless preload crossfade engine, live internet radio system, predictive audio prefetch cache, internationalization (12 languages), drag-and-drop queue redesign, real-time playback indicators, and multi-artist support.'
-          - Extracted a modular architecture from a monolithic codebase, **removing 1,500+ lines**.
+          - Extracted a modular architecture from a monolithic codebase, **removing 1,500+ lines** of code.
           - AI-assisted development (Claude Code) for implementation, refactoring, and code review.
       - name: '[Parqueadero.app](https://parqueadero.app)'
         date: '2025'
@@ -98,14 +98,14 @@ cv:
           - API Key authentication, OpenAPI 3.0 docs, automatic reconnection, and scalable batch processing.
       - name: '[NotificacionesQR](https://notificacionesqr.com)'
         date: '2025'
-        summary: Automated **WhatsApp** notification service for QR payments, **Bre-B** transfers, and Bancolombia transactions.
+        summary: Automated **WhatsApp** notification service for QR payments, **Bre-B** transfers (Colombia's instant payment rail), and Bancolombia transactions.
         highlights:
           - Real-time email ingestion via **Google Pub/Sub**, transaction parsing, and instant alerts to the business's WhatsApp group.
           - 'Stack: Node.js/Express, Baileys, Gmail API, SQLite, Canvas, PDFKit.'
           - Daily, weekly, and monthly reports with auto-generated images and professional PDFs.
-      - name: '[4x1000 Calculator](https://www.4x1000.co/)'
+      - name: '[Calculadora 4x1000](https://www.4x1000.co/)'
         date: '2024'
-        summary: Financial calculator (GMF 4x1000) built with **Svelte and TailwindCSS**.
+        summary: Financial calculator (GMF 4x1000 — Colombian financial transaction tax) built with **Svelte and TailwindCSS**.
         highlights:
           - Reactive state, history with local persistence, dark/light mode.
           - Mobile-optimized with PWA install support.
@@ -136,12 +136,12 @@ cv:
       - label: DevOps & Infrastructure
         details: Linux, Docker, Proxmox, Nginx, PM2, Vercel, Cloudflare Tunnels
       - label: Desktop, Scraping & Integrations
-        details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, NextAuth, multi-provider OAuth
+        details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, Google Pub/Sub, Gmail API, NextAuth, multi-provider OAuth
       - label: AI-Assisted Development
         details: Claude Code, Codex, Ollama (local AI), Applied Prompt Engineering
     education:
       - institution: Universidad Tecnológica de Pereira
-        area: Systems and Computer Engineering
+        area: Computer Systems Engineering
         degree: BSc
         location: Pereira, Colombia
         start_date: 2009-01

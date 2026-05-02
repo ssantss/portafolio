@@ -22,12 +22,12 @@ cv:
         position: Desarrollador Full-Stack
         start_date: 2026-01
         end_date: present
-        location: New Jersey, USA
+        location: New Jersey, USA (Remote)
         summary: 'Construí end-to-end el **Tesla Dashboard**, plataforma de gestión y monitoreo de vehículos eléctricos Tesla con integración directa a la Tesla Owner API. Stack: Vue.js, Python (Django), Tesla Owner API, OAuth.'
         highlights:
           - 'Construí el Tesla Dashboard completo desde cero: galería de imágenes con navegación táctil, decodificador interactivo de VIN, sistema de órdenes con timeline logístico y panel de delivery con ETA en tiempo real.'
           - Rediseñé el flujo de autenticación OAuth con Tesla Owner API, simplificando un proceso de 5 pasos a una interfaz basada en fases con monitoreo automático de popup.
-          - Owní el panel de órdenes enriquecido con componentes de financiamiento, tareas de entrega, narrativa compartible (Web Share API) y visor JSON unificado.
+          - Lideré el panel de órdenes enriquecido con componentes de financiamiento, tareas de entrega, narrativa compartible (Web Share API) y visor JSON unificado.
           - Implementé sistema de internacionalización completo (español/inglés) con detección automática de idioma.
       - company: Sileo (Freelance)
         position: Desarrollador Full-Stack
@@ -38,8 +38,8 @@ cv:
         highlights:
           - Diseñé arquitectura distribuida con microservicios para integración con sistema Siesa.
           - Construí sistema de autenticación y gestión de usuarios con roles dinámicos.
-          - Owní módulo comercial con sincronización en tiempo real y generación automatizada de etiquetas.
-          - Reducción del **90% en tiempo de generación de etiquetas** mediante automatización con PDF.
+          - Lideré módulo comercial con sincronización en tiempo real y generación automatizada de etiquetas.
+          - Reduje **90% el tiempo de generación de etiquetas** mediante automatización con PDF.
       - company: Plataforma de Apuestas Deportivas (Freelance)
         position: Desarrollador Full-Stack
         start_date: 2024-07
@@ -59,9 +59,9 @@ cv:
         summary: 'Construí plataforma de landing page para almacén metalmecánico con sistema de cotización integrado. Stack: Vue.js, Node.js/Express, PostgreSQL.'
         highlights:
           - Diseñé y construí landing optimizada con alta usabilidad y diseño responsivo.
-          - Owní el sistema de cotización integrado con generación automática de PDFs para propuestas comerciales.
+          - Lideré el sistema de cotización integrado con generación automática de PDFs para propuestas comerciales.
           - Diseñé arquitectura backend con Express para manejo eficiente de solicitudes y almacenamiento en PostgreSQL.
-          - Reducción del **85% en el tiempo de elaboración de cotizaciones** mediante automatización de PDFs.
+          - Reduje **85% el tiempo de elaboración de cotizaciones** mediante automatización de PDFs.
       - company: Recibosypagos.co
         position: Desarrollador Full-Stack
         start_date: 2021-12
@@ -71,8 +71,8 @@ cv:
         highlights:
           - Migré la plataforma a **Progressive Web App (PWA)**.
           - Construí APIs RESTful con Django REST Framework e integré componentes front-end y back-end.
-          - Owní módulos en **Next.js** para escalar funcionalidad y mejorar la experiencia de usuario.
-          - Implementé **web scraping con Django** para extraer información de plataformas de venta de productos a catálogo.
+          - Lideré módulos en **Next.js** para escalar funcionalidad y mejorar la experiencia de usuario.
+          - Implementé **web scraping con Django** para extraer datos de catálogos desde plataformas de e-commerce externas.
           - Refactoricé código legacy migrando de **jQuery a React**, optimizando rendimiento y mantenibilidad del cliente.
     proyectos:
       - name: '[Snowify](https://snowify.cc/) — Contribuidor Open Source'
@@ -81,14 +81,14 @@ cv:
         summary: Reproductor de música de escritorio open source basado en Electron. **25 PRs mergeados al proyecto upstream**, abarcando features completos, bug fixes y refactors arquitectónicos.
         highlights:
           - 'Implementaciones principales: motor de crossfade con preload gapless, sistema de radio por internet en vivo, cache de audio con pre-descarga predictiva, sistema de internacionalización (12 idiomas), rediseño del sistema de colas con drag & drop, indicadores de reproducción en tiempo real y soporte multi-artista.'
-          - 'Extracción de arquitectura modular desde codebase monolítico **reduciendo +1,500 líneas**.'
+          - 'Extracción de arquitectura modular desde codebase monolítico **eliminando +1,500 líneas**.'
           - Desarrollo asistido por IA (Claude Code) para implementación, refactoring y code review.
       - name: '[Parqueadero.app](https://parqueadero.app)'
         date: '2025'
         summary: Sistema de gestión de parqueaderos en la nube con impresión de tickets en impresora térmica, tarifas flexibles por hora y minuto.
         highlights:
           - Generación de códigos de barras, PWA responsiva para acceso desde cualquier dispositivo.
-          - Reportes en tiempo real para facilitar la operación de lotes de estacionamiento.
+          - Reportes en tiempo real para facilitar la operación del parqueadero.
       - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
@@ -136,7 +136,7 @@ cv:
       - label: DevOps & Infraestructura
         details: Linux, Docker, Proxmox, Nginx, PM2, Vercel, Cloudflare Tunnels
       - label: Desktop, Scraping & Integraciones
-        details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, NextAuth, OAuth multi-proveedor
+        details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, Google Pub/Sub, Gmail API, NextAuth, OAuth multi-proveedor
       - label: Desarrollo asistido por IA
         details: Claude Code, Codex, Ollama (IA local), Prompt Engineering aplicado
     educación:
@@ -147,7 +147,7 @@ cv:
         start_date: 2009-01
         end_date: 2014-12
     certificaciones:
-      - bullet: 'Selected Platzi tracks — Python, JavaScript, Vue.js, bases de datos. Certificados en [platzi.com/p/saants](https://platzi.com/p/saants).'
+      - bullet: 'Cursos seleccionados de Platzi — Python, JavaScript, Vue.js, bases de datos. Certificados en [platzi.com/p/saants](https://platzi.com/p/saants).'
     idiomas:
       - label: Español
         details: Nativo
