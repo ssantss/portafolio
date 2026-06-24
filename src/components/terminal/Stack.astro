@@ -1,0 +1,34 @@
+---
+// Grupos de stack (hardcoded del handoff). Separador "  ·  ".
+const SEP = "  ·  ";
+const groups: { label: string; items: string[] }[] = [
+  { label: "core", items: ["Django", "Next.js", "Python", "TypeScript"] },
+  { label: "frontend", items: ["React", "Vue", "Svelte", "Tailwind"] },
+  { label: "backend", items: ["FastAPI", "Express", "Django REST", "PostgreSQL"] },
+  { label: "infra", items: ["Docker", "Linux", "Nginx", "Vercel"] },
+  {
+    label: "integraciones",
+    items: ["WhatsApp · Baileys", "OAuth", "Pub/Sub", "Cámaras IP · Impresoras"],
+  },
+];
+---
+
+<section
+  id="a-stack"
+  class="border-t border-line-soft bg-bg-alt px-5 py-10 md:px-[44px] md:py-[40px]"
+>
+  <div class="mb-[18px] text-[13px] text-faint-2">
+    <span class="text-accent">$</span> cat stack.json
+  </div>
+
+  <div class="overflow-hidden rounded-[8px] border border-line">
+    {
+      groups.map((g) => (
+        <div class="grid grid-cols-[100px_1fr] gap-[18px] border-b border-line-soft px-5 py-[14px] transition-colors last:border-b-0 hover:bg-[rgba(168,85,247,0.04)] sm:grid-cols-[150px_1fr]">
+          <span class="text-[13px] font-medium text-accent">{g.label}</span>
+          <span class="text-[13px] text-stack">{g.items.join(SEP)}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>

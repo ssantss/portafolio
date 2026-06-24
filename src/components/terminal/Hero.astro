@@ -1,0 +1,55 @@
+---
+import presentation from "@/data/presentation";
+
+// Negritas blancas a partir de los marcadores *...* del bio.
+const aboutHtml = presentation.description.replace(
+  /\*{1,2}(.*?)\*{1,2}/g,
+  "<strong>$1</strong>",
+);
+---
+
+<section class="px-5 py-12 md:px-[44px] md:pt-[54px] md:pb-[48px]">
+  <div class="mb-[6px] text-[13px] text-faint-2">
+    <span class="text-accent">$</span> whoami
+  </div>
+  <h1
+    class="mb-[4px] text-[32px] font-bold leading-[1.1] tracking-[-0.01em] lowercase md:text-[40px]"
+  >
+    {presentation.title}
+  </h1>
+  <div class="mb-[30px] text-[15px] text-muted">// {presentation.role}</div>
+
+  <div class="mb-[10px] text-[13px] text-faint-2">
+    <span class="text-accent">$</span> cat about.md
+  </div>
+  <p
+    class="about mb-[32px] max-w-[680px] text-[14.5px] leading-[1.85] text-body"
+    set:html={aboutHtml}
+  />
+
+  <div class="mb-[12px] text-[13px] text-faint-2">
+    <span class="text-accent">$</span> ls --social
+  </div>
+  <div class="flex flex-wrap gap-[10px]">
+    {
+      presentation.socials.map((s) => (
+        <a
+          href={s.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 rounded-[6px] border border-line-pill bg-pill px-[14px] py-[9px] transition-all hover:border-accent hover:bg-[rgba(168,85,247,0.06)]"
+        >
+          <span class="text-[13px] text-text">{s.label}</span>
+          <span class="text-[12px] text-faint">{s.handle}</span>
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .about :global(strong) {
+    color: #fff;
+    font-weight: 600;
+  }
+</style>

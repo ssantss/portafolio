@@ -1,0 +1,70 @@
+---
+import projects from "@/data/projects";
+
+const SEP = "  ·  ";
+
+// Orden por jerarquía: estrella (★) → destacado (•) → resto.
+// El sort estable conserva el orden del array dentro de cada nivel.
+const rank = (p: (typeof projects)[number]) =>
+  p.isStar ? 2 : p.isFeatured ? 1 : 0;
+const ordered = [...projects].sort((a, b) => rank(b) - rank(a));
+
+const linkLabel = (link?: string) =>
+  link ? link.replace(/^https?:\/\//, "").replace(/\/$/, "") : "privado";
+const pad = (n: number) => String(n).padStart(2, "0");
+---
+
+<section
+  id="a-projects"
+  class="px-5 py-11 md:px-[44px] md:pt-[44px] md:pb-[30px]"
+>
+  <div class="mb-2 flex items-baseline justify-between">
+    <div class="text-[13px] text-faint-2">
+      <span class="text-accent">$</span> ls projects/ --sort=featured
+    </div>
+    <span class="text-[12px] text-faint-2">{projects.length} repos</span>
+  </div>
+
+  <div>
+    {
+      ordered.map((p, i) => (
+        <a
+          href={p.link || undefined}
+          target={p.link ? "_blank" : undefined}
+          rel={p.link ? "noopener noreferrer" : undefined}
+          class="grid grid-cols-[32px_1fr] items-start gap-5 rounded-[6px] border-b border-line-soft px-3 py-4 transition-colors hover:bg-[rgba(168,85,247,0.06)] md:grid-cols-[42px_1fr_auto]"
+        >
+          <span class="pt-[2px] text-[13px] font-medium text-faint-3">
+            {pad(i + 1)}
+          </span>
+
+          <div>
+            <div class="flex items-center gap-[10px]">
+              {p.isStar ? (
+                <span class="text-[13px] leading-none text-accent">★</span>
+              ) : p.isFeatured ? (
+                <span class="inline-block h-[6px] w-[6px] rounded-full bg-accent" />
+              ) : null}
+              <span class="text-[16px] font-semibold text-text">
+                {p.title}
+              </span>
+            </div>
+            <div class="mt-[6px] max-w-[560px] text-[12.5px] leading-[1.5] text-muted-2">
+              {p.shortDesc ?? p.description}
+            </div>
+            <div class="mt-[9px] text-[11.5px] tracking-[0.02em] text-accent">
+              {p.techs.slice(0, 4).join(SEP)}
+            </div>
+            <div class="mt-[10px] text-[12px] text-faint-3 md:hidden">
+              {linkLabel(p.link)}
+            </div>
+          </div>
+
+          <span class="hidden pt-[2px] text-[13px] text-faint-3 md:block">
+            {linkLabel(p.link)}
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</section>

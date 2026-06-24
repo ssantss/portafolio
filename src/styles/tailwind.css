@@ -1,7 +1,70 @@
 @import "tailwindcss";
 
+/* Dirección "Terminal / CLI" — tokens del design handoff (opción A) */
 @theme {
-  --font-sans:
-    "Open Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Fondos */
+  --color-page: #050507; /* fondo fuera del frame */
+  --color-bg: #0a0a0c; /* fondo del frame */
+  --color-bg-alt: #0c0c10; /* secciones stack y contacto */
+  --color-chrome: #101014; /* barra superior */
+  --color-pill: #0e0e12; /* fondo de pills sociales */
+  --color-seg: #131318; /* celda "cv" del control */
+
+  /* Bordes */
+  --color-line: #1c1c22; /* contenedores / header */
+  --color-line-soft: #15151a; /* divisores */
+  --color-line-pill: #1f1f26; /* pills sociales */
+  --color-line-2: #2a2a30; /* control CV / dots */
+
+  /* Texto */
+  --color-text: #e8e8ec; /* principal */
+  --color-body: #c8c8d0; /* párrafo about */
+  --color-stack: #b8b8c2; /* items de stack */
+  --color-muted: #8a8a94; /* subtítulos, nav, teléfono */
+  --color-muted-2: #7a7a86; /* descripción de proyectos */
+  --color-faint: #6a6a76; /* ruta del prompt, handles */
+  --color-faint-2: #5a5a64; /* comentarios $, contadores */
+  --color-faint-3: #4a4a54; /* números de fila, footer */
+
+  /* Acento */
+  --color-accent: #a855f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cursor parpadeante en la línea de teléfono (único elemento animado) */
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 9px;
+  height: 17px;
+  margin-left: 8px;
+  vertical-align: -3px;
+  background: var(--color-accent);
+  animation: blink 1.1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .cursor-blink {
+    animation: none;
+  }
 }

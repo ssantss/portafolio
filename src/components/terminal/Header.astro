@@ -1,0 +1,54 @@
+---
+// Chrome de ventana de terminal — sticky top.
+const navLinks = [
+  { label: "proyectos", href: "#a-projects" },
+  { label: "stack", href: "#a-stack" },
+  { label: "contacto", href: "#a-contact" },
+];
+---
+
+<header
+  class="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-line bg-chrome px-4 py-3 md:px-[22px] md:py-[14px]"
+>
+  <div class="flex items-center gap-[14px]">
+    <div class="flex gap-[7px]">
+      <span class="h-[11px] w-[11px] rounded-full bg-line-2"></span>
+      <span class="h-[11px] w-[11px] rounded-full bg-line-2"></span>
+      <span class="h-[11px] w-[11px] rounded-full bg-line-2"></span>
+    </div>
+    <span class="hidden text-[12.5px] text-faint sm:inline"
+      >santiago@portfolio:&nbsp;~</span
+    >
+  </div>
+
+  <div class="flex flex-wrap items-center justify-end gap-2">
+    {
+      navLinks.map((l) => (
+        <a
+          href={l.href}
+          class="px-[10px] py-[6px] text-[12.5px] text-muted transition-colors hover:text-text"
+        >
+          {l.label}
+        </a>
+      ))
+    }
+
+    <div
+      class="ml-[6px] flex items-stretch overflow-hidden rounded-[6px] border border-line-2 text-[12.5px]"
+    >
+      <span class="border-r border-line-2 bg-seg px-[11px] py-[7px] text-faint"
+        >cv</span
+      >
+      <a
+        href="/santiago_jimenez_cv_es.pdf"
+        class="px-[11px] py-[7px] text-accent transition-colors hover:bg-[rgba(168,85,247,0.12)]"
+        >.es</a
+      >
+      <a
+        href="/santiago_jimenez_cv_en.pdf"
+        class="border-l border-line-2 px-[11px] py-[7px] text-accent transition-colors hover:bg-[rgba(168,85,247,0.12)]"
+        >.en</a
+      >
+    </div>
+  </div>
+</header>

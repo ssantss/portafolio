@@ -1,5 +1,6 @@
 type Social = {
   label: string;
+  handle: string;
   link: string;
 };
 
@@ -7,6 +8,7 @@ type Presentation = {
   mail: string;
   phone: string;
   title: string;
+  role: string;
   description: string;
   socials: Social[];
   profile?: string;
@@ -19,25 +21,30 @@ type Presentation = {
 const presentation: Presentation = {
   mail: "santyjimenez92@gmail.com",
   phone: "+573003060003",
-  title: "Hola, soy Santiago 🧔",
+  title: "Santiago Jimenez",
+  role: "desarrollador fullstack — django + next.js",
   // profile: "/profile.webp",
   description:
-    "*Desarrollador Fullstack* con foco en *Django y Next.js*. Llevo *4 años* diseñando y operando plataformas SaaS de punta a punta — desde apuestas deportivas y facturación multi-tenant hasta sistemas de parqueo, con integraciones a WhatsApp, OAuth, *cámaras IP e impresoras en red*. En producción manejo *PostgreSQL, Docker y Linux*, y cuando un proyecto lo pide también trabajo con *Vue, Svelte, React, FastAPI y Express*.",
+    "Desarrollador Fullstack con foco en *Django y Next.js*. Llevo *4 años* diseñando y operando plataformas SaaS de punta a punta — apuestas deportivas, facturación multi-tenant y sistemas de parqueo — con integraciones a WhatsApp, OAuth, *cámaras IP e impresoras en red*. En producción manejo *PostgreSQL, Docker y Linux*.",
   socials: [
     {
-      label: "Gitlab",
-      link: "https://gitlab.com/ssantss",
-    },
-    {
-      label: "Github",
+      label: "GitHub",
+      handle: "@ssantss",
       link: "https://github.com/ssantss",
     },
     {
-      label: "Linkedin",
+      label: "GitLab",
+      handle: "@ssantss",
+      link: "https://gitlab.com/ssantss",
+    },
+    {
+      label: "LinkedIn",
+      handle: "in/ssantss",
       link: "https://linkedin.com/in/ssantss",
     },
     {
       label: "X",
+      handle: "@santiiiag_o",
       link: "https://twitter.com/santiiiag_o",
     },
   ],

@@ -1,0 +1,42 @@
+---
+import presentation from "@/data/presentation";
+
+// "+573003060003" -> "+57 300 306 0003"
+const national = presentation.phone.replace(/^\+57/, "");
+const phoneDisplay = `+57 ${national.slice(0, 3)} ${national.slice(3, 6)} ${national.slice(6)}`;
+---
+
+<section
+  id="a-contact"
+  class="border-t border-line-soft bg-bg-alt px-5 py-12 md:px-[44px] md:py-[46px]"
+>
+  <div class="mb-[18px] text-[13px] text-faint-2">
+    <span class="text-accent">$</span> ./contact.sh --now
+  </div>
+
+  <a
+    href={`mailto:${presentation.mail}`}
+    class="inline-block text-[20px] font-bold tracking-[-0.01em] break-all text-text transition-colors hover:text-accent sm:text-[26px] md:text-[30px]"
+  >
+    {presentation.mail}
+  </a>
+
+  <div class="mt-[10px] text-[14px] text-muted">
+    {phoneDisplay}<span class="cursor-blink" aria-hidden="true"></span>
+  </div>
+
+  <div class="mt-[24px] flex flex-wrap gap-[10px]">
+    {
+      presentation.socials.map((s) => (
+        <a
+          href={s.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="rounded-[6px] border border-line-pill px-[14px] py-2 text-[13px] text-muted transition-all hover:border-line-2 hover:text-text"
+        >
+          {s.label}
+        </a>
+      ))
+    }
+  </div>
+</section>
