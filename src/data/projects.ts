@@ -107,7 +107,6 @@ const projects: Project[] = [
   {
     title: 'Places Pin',
     techs: ['JavaScript', 'Vue.js 3', 'Django', 'Google Maps API', 'Vuetify', 'Docker'],
-    link: 'https://places.paicoders.com/santiago',
     git: 'https://gitlab.com/paicoder/places/places-monorepo',
     shortDesc:
       'Mapa de pines interactivos para revivir y compartir aventuras de viaje.',
