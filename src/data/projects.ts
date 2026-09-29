@@ -13,6 +13,16 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    title: 'DIGER Pereira',
+    techs: ['Django', 'Next.js', 'Celery', 'LLMs', 'PostgreSQL'],
+    link: 'https://digerpereira.com',
+    isStar: true,
+    shortDesc:
+      'Plataforma de la Alcaldía de Pereira que digitaliza con IA el censo de familias afectadas por emergencias; 46K+ escaneos.',
+    description:
+      'Creador y líder técnico de la plataforma con la que la Dirección de Gestión del Riesgo de Pereira digitaliza los formularios de caracterización psicosocial de familias afectadas por emergencias y los reporta al registro nacional de damnificados (RUD/UNGRD). Extracción de formularios escaneados con votación por consenso entre varios modelos de IA, auditoría humana de los campos sin consenso y exportación automatizada al RUD. 46.000+ escaneos procesados y 11.000+ familias reportadas.',
+  },
+  {
     title: 'NotificacionesQR',
     techs: ['Node.js', 'Express', 'Baileys', 'Gmail API', 'Google Pub/Sub', 'SQLite', 'Canvas', 'PDFKit'],
     link: 'https://notificacionesqr.com',
@@ -25,13 +35,13 @@ const projects: Project[] = [
   },
   {
     title: 'Parqueadero.app',
-    techs: ['Next.js', 'Django', 'Python', 'React', 'PostgreSQL'],
+    techs: ['Next.js', 'Django', 'Python', 'Capacitor', 'PostgreSQL'],
     link: 'https://parqueadero.app/',
     isStar: true,
     shortDesc:
-      'Gestión de parqueaderos en la nube con tickets térmicos, tarifas flexibles y reportes en vivo.',
+      'SaaS de parqueaderos usado por ~130 parqueaderos en 14 países: tickets térmicos, app Android y modo sin red.',
     description:
-      'Sistema de gestión de parqueaderos en la nube con impresión de tickets en impresora térmica, tarifas flexibles por hora y minuto. Incluye generación de códigos de barras, PWA responsiva para acceso desde cualquier dispositivo y reportes en tiempo real para facilitar la operación de lotes de estacionamiento.',
+      'SaaS de gestión de parqueaderos que fundé y opero: ~130 parqueaderos activos en 14 países y ~1.600 vehículos por día hábil. Motor de cobro con 5 modos (minuto, fracciones, tramos, tarifa plana y pases por horario), mensualidades, convenios con comercios, cierre de caja, impresión térmica por Bluetooth/red, PWA offline-first y app nativa Android.',
   },
   {
     title: 'Plataforma Empresarial Siesa',

@@ -15,9 +15,32 @@ cv:
       username: ssantss
   sections:
     resumen profesional:
-      - 'Desarrollador Full Stack con **4+ años shipping plataformas multi-tenant en producción** para PyMEs LatAm y apuestas deportivas reguladas en Colombia. Experto en **Django + Next.js**, con stack secundario en Vue, Svelte y Electron. Construyo end-to-end: desde scraping y APIs RESTful hasta hardware POS (impresoras térmicas) e integraciones WhatsApp.'
+      - 'Desarrollador Full Stack con **~5 años construyendo plataformas en producción** para el sector público, PyMEs LatAm y apuestas deportivas reguladas en Colombia. Experto en **Django + Next.js**, con stack secundario en Vue, Svelte y Electron. Hoy lidero una **plataforma de extracción de documentos con IA para la Alcaldía de Pereira** y opero mi propio **SaaS usado por ~130 parqueaderos en 14 países**. Construyo end-to-end: desde APIs RESTful y pipelines con LLMs hasta hardware POS (impresoras térmicas) e integraciones WhatsApp.'
       - Sólidos conocimientos en **Linux, Docker** y administración de sistemas con **Proxmox**. Incorporo activamente **Claude Code y Codex** en mi flujo de trabajo, con prompt engineering aplicado a generación de código, refactoring y code review.
     experiencia profesional:
+      - company: DIGER — Alcaldía de Pereira (Contratista)
+        position: Líder Full-Stack (Creador y Mantenedor)
+        start_date: 2026-08
+        end_date: present
+        location: Pereira, Colombia
+        summary: 'Creé y lidero [digerpereira.com](https://digerpereira.com), la plataforma con la que la Dirección de Gestión del Riesgo digitaliza los formularios de caracterización psicosocial de familias afectadas por emergencias y los reporta al registro nacional de damnificados (RUD/UNGRD). Stack: Django/DRF, Celery, Redis, PostgreSQL, Next.js, React, APIs de Anthropic/Mistral/Gemini.'
+        highlights:
+          - Diseñé la arquitectura desde el primer commit y lideré un equipo de ~10 contribuidores; autor de **~75% de 690+ commits** y revisé/mergeé 100+ PRs en las primeras 6 semanas.
+          - 'Diseñé un **pipeline de extracción con IA sobre formularios escaneados con votación por consenso entre proveedores** (Anthropic, Mistral, Gemini): la confianza sale del acuerdo entre modelos, los campos sin consenso pasan a auditoría humana y cada corrección queda registrada para medir la precisión real.'
+          - Hice benchmark de pares de modelos sobre documentos reales para dimensionar 60.000 formularios, eligiendo una configuración proyectada en **~$2.2K USD y 18 h en vez de 179 h (10× más rápido)**.
+          - Procesé **46.000+ escaneos** y automaticé la exportación al RUD (**11.000+ familias reportadas**), reemplazando la digitación manual.
+          - 'Opero producción: self-hosted con PM2 y Cloudflare Tunnel, 8 workers de extracción en Celery, backups nocturnos, CI en GitHub Actions, JWT con 4 roles y auditoría por campo bajo la Ley 1581 de protección de datos.'
+      - company: Parqueadero.app (Fundador)
+        position: Fundador y Desarrollador Principal
+        start_date: 2025-05
+        end_date: present
+        location: Pereira, Colombia
+        summary: 'Construí y opero [Parqueadero.app](https://parqueadero.app), SaaS de gestión de parqueaderos usado por **~130 parqueaderos activos en 14 países** (~1.600 vehículos por día hábil). Stack: Django/DRF, PostgreSQL, Next.js, React, Material-UI, Capacitor.'
+        highlights:
+          - 'Único desarrollador del producto end-to-end (1.700+ commits): motor de cobro con 5 modos (por minuto, fracciones, tramos, tarifa plana, pases por horario), mensualidades, convenios con comercios y cierre de turno/caja.'
+          - PWA offline-first y **app nativa Android**, con impresión térmica de tickets por Bluetooth/red (ESC/POS) y códigos de salida con código de barras.
+          - Multipaís y multilenguaje (moneda, formatos de placa, landing localizada en 15 idiomas); suscripciones SaaS y panel superadmin con **17 clientes pagando**.
+          - Suite de pruebas con 150+ archivos de tests de backend y E2E del modo sin red; despliegue con PM2 y Cloudflare Tunnels.
       - company: Vatio Libre (Contractor)
         position: Desarrollador Full-Stack
         start_date: 2026-01
@@ -83,12 +106,6 @@ cv:
           - 'Implementaciones principales: motor de crossfade con preload gapless, sistema de radio por internet en vivo, cache de audio con pre-descarga predictiva, sistema de internacionalización (12 idiomas), rediseño del sistema de colas con drag & drop, indicadores de reproducción en tiempo real y soporte multi-artista.'
           - 'Extracción de arquitectura modular desde codebase monolítico **eliminando +1,500 líneas**.'
           - Desarrollo asistido por IA (Claude Code) para implementación, refactoring y code review.
-      - name: '[Parqueadero.app](https://parqueadero.app)'
-        date: '2025'
-        summary: Sistema de gestión de parqueaderos en la nube con impresión de tickets en impresora térmica, tarifas flexibles por hora y minuto.
-        highlights:
-          - Generación de códigos de barras, PWA responsiva para acceso desde cualquier dispositivo.
-          - Reportes en tiempo real para facilitar la operación del parqueadero.
       - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
@@ -103,42 +120,19 @@ cv:
           - Recepción de emails en tiempo real vía **Google Pub/Sub**, parseo de transacciones y alertas instantáneas al grupo de WhatsApp del negocio.
           - 'Stack: Node.js/Express, Baileys, Gmail API, SQLite, Canvas, PDFKit.'
           - Reportes diarios, semanales y mensuales con imágenes generadas y PDF profesional.
-      - name: '[Calculadora 4x1000](https://www.4x1000.co/)'
-        date: '2024'
-        summary: Calculadora financiera (GMF 4x1000) con **Svelte y TailwindCSS**.
-        highlights:
-          - Estados reactivos, sistema de historial con persistencia local, modo oscuro/claro.
-          - Optimizada para dispositivos móviles con instalación como PWA.
-      - name: Scanner Audifarma
-        date: '2024'
-        summary: Sistema de digitalización de documentos con **Vue.js y Dynamsoft Web TWAIN**.
-        highlights:
-          - Escáner web en tiempo real con integración de hardware local, procesamiento de imágenes y conversión a PDF.
-          - Validación de parámetros e integración con servidor mediante Axios.
-      - name: '[Profit Money](https://profitmoney.paicoders.com/)'
-        date: '2024'
-        summary: Plataforma web con **Svelte y Firebase** para gestión de finanzas personales.
-        highlights:
-          - Control de inversiones, préstamos y ahorros con cálculos automáticos de intereses, amortizaciones y retención de impuestos.
-          - Reportes PDF, dashboard en tiempo real y sincronización con Firebase Firestore. Autenticación con Google.
-      - name: iPhone Stock Checker
-        date: '2022'
-        summary: Bot automatizado en **Python** para monitoreo de inventario de Apple Store.
-        highlights:
-          - Integración con múltiples APIs (Apple Store, Slack, Telegram). Notificaciones en tiempo real y manejo de datos JSON.
     habilidades técnicas:
       - label: Frontend
         details: Next.js, Vue.js 2/3, Svelte, React, Astro, TypeScript, TailwindCSS, shadcn/ui, Vuetify, Material-UI (Pinia, Vuex, Context API)
       - label: Backend
-        details: Python, Django, Django REST Framework, Node.js, Express, FastAPI
+        details: Python, Django, Django REST Framework, Celery, Node.js, Express, FastAPI
       - label: Bases de Datos & Caché
         details: PostgreSQL, Redis, Firebase, Supabase
       - label: DevOps & Infraestructura
-        details: Linux, Docker, Proxmox, Nginx, PM2, Vercel, Cloudflare Tunnels
+        details: Linux, Docker, Proxmox, Nginx, PM2, GitHub Actions, Vercel, Cloudflare Tunnels
       - label: Desktop, Scraping & Integraciones
         details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, Google Pub/Sub, Gmail API, NextAuth, OAuth multi-proveedor
       - label: Desarrollo asistido por IA
-        details: Claude Code, Codex, Ollama (IA local), Prompt Engineering aplicado
+        details: Claude Code, Codex, APIs de LLMs (Anthropic, Mistral, Gemini), Ollama (IA local), Prompt Engineering aplicado
     educación:
       - institution: Universidad Tecnológica de Pereira
         area: Ingeniería de Sistemas y Computación
@@ -153,8 +147,6 @@ cv:
         details: Nativo
       - label: Inglés
         details: B2 (Upper-Intermediate)
-    referencias:
-      - bullet: Disponibles a solicitud.
 design:
   theme: engineeringresumes
 locale:

@@ -25,7 +25,7 @@ const presentation: Presentation = {
   role: "desarrollador fullstack — django + next.js",
   // profile: "/profile.webp",
   description:
-    "Desarrollador Fullstack con foco en *Django y Next.js*. Llevo *4 años* diseñando y operando plataformas SaaS de punta a punta — apuestas deportivas, facturación multi-tenant y sistemas de parqueo — con integraciones a WhatsApp, OAuth, *cámaras IP e impresoras en red*. En producción manejo *PostgreSQL, Docker y Linux*.",
+    "Desarrollador Fullstack con foco en *Django y Next.js*. Llevo *casi 5 años* diseñando y operando plataformas de punta a punta — sector público, SaaS multi-tenant, apuestas deportivas y sistemas de parqueo. Hoy lidero *una plataforma con IA para la Alcaldía de Pereira* y opero *mi propio SaaS en 14 países*. En producción manejo *PostgreSQL, Docker y Linux*.",
   socials: [
     {
       label: "GitHub",

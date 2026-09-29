@@ -15,9 +15,32 @@ cv:
       username: ssantss
   sections:
     professional summary:
-      - 'Full Stack Developer with **4+ years shipping multi-tenant production platforms** for LatAm SMBs and regulated sports betting in Colombia. Expert in **Django + Next.js**, with secondary stack in Vue, Svelte, and Electron. I build end-to-end: from scraping and RESTful APIs to POS hardware (thermal printers) and WhatsApp integrations.'
+      - 'Full Stack Developer with **~5 years shipping production platforms** for the public sector, LatAm SMBs, and regulated sports betting in Colombia. Expert in **Django + Next.js**, with secondary stack in Vue, Svelte, and Electron. Currently leading an **AI-powered document extraction platform for the City of Pereira** and running my own **SaaS used by ~130 parking lots in 14 countries**. I build end-to-end: from RESTful APIs and LLM pipelines to POS hardware (thermal printers) and WhatsApp integrations.'
       - Solid hands-on experience with **Linux, Docker**, and system administration with **Proxmox**. I actively integrate **Claude Code and Codex** into my workflow, with applied prompt engineering for code generation, refactoring, and code review.
     professional experience:
+      - company: DIGER — Alcaldía de Pereira (Contractor)
+        position: Lead Full-Stack Engineer (Creator & Maintainer)
+        start_date: 2026-08
+        end_date: present
+        location: Pereira, Colombia
+        summary: 'Created and lead [digerpereira.com](https://digerpereira.com), the platform the city''s Disaster Risk Management Office uses to digitize psychosocial census forms of families affected by emergencies and report them to Colombia''s national damage registry (RUD/UNGRD). Stack: Django/DRF, Celery, Redis, PostgreSQL, Next.js, React, Anthropic/Mistral/Gemini APIs.'
+        highlights:
+          - Architected the system from the first commit and led a team of ~10 contributors; authored **~75% of 690+ commits** and reviewed/merged 100+ PRs in the first 6 weeks.
+          - Designed an **AI extraction pipeline for scanned forms with multi-provider consensus voting** (Anthropic, Mistral, Gemini) — confidence comes from inter-model agreement, fields without consensus go to human audit, and every auditor correction is logged to measure real accuracy.
+          - Benchmarked model pairs on real documents to size the 60,000-form workload, picking a setup projected at **~$2.2K USD and 18 h instead of 179 h (10× faster)**.
+          - Processed **46,000+ scans** and automated the RUD export to the national registry (**11,000+ families submitted**), replacing manual data entry.
+          - 'Own production operations: self-hosted with PM2 and Cloudflare Tunnel, 8 Celery extraction workers, nightly backups, GitHub Actions CI, JWT with 4 roles, and field-level audit history under Colombia''s data protection law (Ley 1581).'
+      - company: Parqueadero.app (Founder)
+        position: Founder & Lead Developer
+        start_date: 2025-05
+        end_date: present
+        location: Pereira, Colombia
+        summary: 'Built and run [Parqueadero.app](https://parqueadero.app), a SaaS parking-lot management system used by **~130 active parking lots in 14 countries** (~1,600 vehicles per business day). Stack: Django/DRF, PostgreSQL, Next.js, React, Material-UI, Capacitor.'
+        highlights:
+          - 'Sole developer of the product end-to-end (1,700+ commits): billing engine with 5 charging modes (per minute, fractions, tiers, flat, time-slot passes), monthly memberships, merchant validation agreements, and shift/cash-register closing.'
+          - Offline-first PWA plus native **Android app**, with thermal ticket printing over Bluetooth/network (ESC/POS) and barcode exit codes.
+          - Multi-country and multilingual (currency, license-plate formats, localized landing in 15 languages); SaaS subscriptions and super-admin panel with **17 paying customers**.
+          - Test suite with 150+ backend test files and offline-mode E2E tests; deployed with PM2 and Cloudflare Tunnels.
       - company: Vatio Libre (Contractor)
         position: Full-Stack Developer
         start_date: 2026-01
@@ -83,12 +106,6 @@ cv:
           - 'Key contributions: gapless preload crossfade engine, live internet radio system, predictive audio prefetch cache, internationalization (12 languages), drag-and-drop queue redesign, real-time playback indicators, and multi-artist support.'
           - Extracted a modular architecture from a monolithic codebase, **removing 1,500+ lines** of code.
           - AI-assisted development (Claude Code) for implementation, refactoring, and code review.
-      - name: '[Parqueadero.app](https://parqueadero.app)'
-        date: '2025'
-        summary: Cloud-based parking lot management system with thermal printer ticket printing and flexible hourly/minute-based rates.
-        highlights:
-          - Barcode generation, responsive PWA for any-device access.
-          - Real-time reports to streamline parking lot operations.
       - name: '[WhatsApp Messages API](https://messages.paicoders.com/)'
         start_date: 2025-06
         end_date: 2025-07
@@ -103,42 +120,19 @@ cv:
           - Real-time email ingestion via **Google Pub/Sub**, transaction parsing, and instant alerts to the business's WhatsApp group.
           - 'Stack: Node.js/Express, Baileys, Gmail API, SQLite, Canvas, PDFKit.'
           - Daily, weekly, and monthly reports with auto-generated images and professional PDFs.
-      - name: '[Calculadora 4x1000](https://www.4x1000.co/)'
-        date: '2024'
-        summary: Financial calculator (GMF 4x1000 — Colombian financial transaction tax) built with **Svelte and TailwindCSS**.
-        highlights:
-          - Reactive state, history with local persistence, dark/light mode.
-          - Mobile-optimized with PWA install support.
-      - name: Scanner Audifarma
-        date: '2024'
-        summary: Document digitization system built with **Vue.js and Dynamsoft Web TWAIN**.
-        highlights:
-          - Real-time web scanner integrating local hardware, image processing, and PDF conversion.
-          - Parameter validation and server integration via Axios.
-      - name: '[Profit Money](https://profitmoney.paicoders.com/)'
-        date: '2024'
-        summary: Web platform built with **Svelte and Firebase** for personal finance management.
-        highlights:
-          - Investment, loan, and savings tracking with automatic interest, amortization, and tax calculations.
-          - PDF reporting, real-time dashboard, and Firebase Firestore sync. Google authentication.
-      - name: iPhone Stock Checker
-        date: '2022'
-        summary: Automated **Python** bot for Apple Store inventory monitoring.
-        highlights:
-          - Integration with multiple APIs (Apple Store, Slack, Telegram). Real-time notifications and JSON data handling.
     technical skills:
       - label: Frontend
         details: Next.js, Vue.js 2/3, Svelte, React, Astro, TypeScript, TailwindCSS, shadcn/ui, Vuetify, Material-UI (Pinia, Vuex, Context API)
       - label: Backend
-        details: Python, Django, Django REST Framework, Node.js, Express, FastAPI
+        details: Python, Django, Django REST Framework, Celery, Node.js, Express, FastAPI
       - label: Databases & Cache
         details: PostgreSQL, Redis, Firebase, Supabase
       - label: DevOps & Infrastructure
-        details: Linux, Docker, Proxmox, Nginx, PM2, Vercel, Cloudflare Tunnels
+        details: Linux, Docker, Proxmox, Nginx, PM2, GitHub Actions, Vercel, Cloudflare Tunnels
       - label: Desktop, Scraping & Integrations
         details: Electron, Capacitor, Selenium, Playwright, Baileys (WhatsApp), Pandas, Tesla Owner API, Google Pub/Sub, Gmail API, NextAuth, multi-provider OAuth
       - label: AI-Assisted Development
-        details: Claude Code, Codex, Ollama (local AI), Applied Prompt Engineering
+        details: Claude Code, Codex, LLM APIs (Anthropic, Mistral, Gemini), Ollama (local AI), Applied Prompt Engineering
     education:
       - institution: Universidad Tecnológica de Pereira
         area: Computer Systems Engineering
@@ -153,8 +147,6 @@ cv:
         details: Native
       - label: English
         details: B2 (Upper-Intermediate)
-    references:
-      - bullet: Available upon request.
 design:
   theme: engineeringresumes
 locale:
