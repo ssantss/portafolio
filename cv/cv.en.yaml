@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
-  name: Santiago Jiménez Moncada
+  name: Santiago Jimenez Moncada
   headline: Full Stack Developer
   location: Pereira, Colombia
   email: santyjimenez92@gmail.com
@@ -157,4 +157,4 @@ settings:
     dont_generate_markdown: true
     dont_generate_html: true
     dont_generate_png: true
-  pdf_title: Santiago Jiménez Moncada - CV
+  pdf_title: Santiago Jimenez Moncada - CV

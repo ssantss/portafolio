@@ -1,4 +1,4 @@
-# CV — Santiago Jiménez
+# CV — Santiago Jimenez
 
 CV mantenido como código con [RenderCV](https://rendercv.com/) (Typst-based, ATS-friendly).
 

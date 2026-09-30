@@ -1,4 +1,4 @@
-# Portafolio personal de Santiago Jiménez
+# Portafolio personal de Santiago Jimenez
 
 Sitio estático con Astro. Es la cara profesional pública de Santiago — los recruiters y leads aterrizan aquí. Tratar como producción real.
 
