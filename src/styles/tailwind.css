@@ -26,9 +26,9 @@
   --color-stack: #b8b8c2; /* items de stack */
   --color-muted: #8a8a94; /* subtítulos, nav, teléfono */
   --color-muted-2: #7a7a86; /* descripción de proyectos */
-  --color-faint: #6a6a76; /* ruta del prompt, handles */
-  --color-faint-2: #5a5a64; /* comentarios $, contadores */
-  --color-faint-3: #4a4a54; /* números de fila, footer */
+  --color-faint: #858590; /* ruta del prompt, handles (≥4.5:1 sobre bg) */
+  --color-faint-2: #7f7f8a; /* comentarios $, contadores (≥4.5:1) */
+  --color-faint-3: #797984; /* números de fila, footer (≥4.5:1) */
 
   /* Acento */
   --color-accent: #a855f7;
@@ -36,6 +36,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Foco visible para navegación con teclado */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Cursor parpadeante en la línea de teléfono (único elemento animado) */

@@ -21,7 +21,7 @@ const navLinks = [
     >
   </div>
 
-  <div class="flex flex-wrap items-center justify-end gap-2">
+  <nav aria-label="Principal" class="flex flex-wrap items-center justify-end gap-2">
     {
       navLinks.map((l) => (
         <a
@@ -44,6 +44,7 @@ const navLinks = [
         target="_blank"
         rel="noopener noreferrer"
         class="px-[11px] py-[7px] text-accent transition-colors hover:bg-[rgba(168,85,247,0.12)]"
+        aria-label="Descargar CV en español (PDF)"
         >.es</a
       >
       <a
@@ -51,8 +52,9 @@ const navLinks = [
         target="_blank"
         rel="noopener noreferrer"
         class="border-l border-line-2 px-[11px] py-[7px] text-accent transition-colors hover:bg-[rgba(168,85,247,0.12)]"
+        aria-label="Download resume in English (PDF)"
         >.en</a
       >
     </div>
-  </div>
+  </nav>
 </header>

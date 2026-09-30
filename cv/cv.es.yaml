@@ -4,7 +4,7 @@ cv:
   headline: Desarrollador Full Stack
   location: Pereira, Colombia
   email: santyjimenez92@gmail.com
-  phone: tel:+573118030911
+  phone: tel:+573003060003
   website: https://santiago.paicoders.com
   social_networks:
     - network: LinkedIn
@@ -101,7 +101,7 @@ cv:
       - name: '[Snowify](https://snowify.cc/) — Contribuidor Open Source'
         start_date: 2025-01
         end_date: present
-        summary: Reproductor de música de escritorio open source basado en Electron. **25 PRs mergeados al proyecto upstream**, abarcando features completos, bug fixes y refactors arquitectónicos.
+        summary: Reproductor de música de escritorio open source basado en Electron. **30 PRs mergeados al proyecto upstream**, abarcando features completos, bug fixes y refactors arquitectónicos.
         highlights:
           - 'Implementaciones principales: motor de crossfade con preload gapless, sistema de radio por internet en vivo, cache de audio con pre-descarga predictiva, sistema de internacionalización (12 idiomas), rediseño del sistema de colas con drag & drop, indicadores de reproducción en tiempo real y soporte multi-artista.'
           - 'Extracción de arquitectura modular desde codebase monolítico **eliminando +1,500 líneas**.'

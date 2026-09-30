@@ -77,11 +77,12 @@ npm run cv:build # regenera los PDFs del CV (es/en) en public/
 ## Decisiones recientes
 
 - **2026-06-24 — Rediseño "Terminal / CLI"** (opción A del handoff `design_handoff_terminal_portfolio`): se reemplazó la landing por una sola página con estética de consola (chrome de ventana, bloques como comandos, acento morado, JetBrains Mono). Datos desde `presentation.ts` + `projects.ts` (se agregó `shortDesc` y `role`/`handle`); stack hardcoded en `Stack.astro`; control de CV `.es/.en` en el header. Verificado pixel-perfect contra `reference_option_a.html` con Playwright. (Descartó un rediseño editorial "construyo y opero" que estaba sin commitear.)
+- **2026-09-30 — Auditoría de la landing aplicada**: imagen OG nueva con el look terminal (`public/opengraph-image.png`, 1200×630, generada con Chrome headless), `og:image` absoluta + `og:description`/`og:locale`, JSON-LD `Person` y `canonical` en `SEOTags.astro`; `public/llms.txt` para asistentes de IA; tokens `faint*` subidos a ≥4.5:1 de contraste; `h2` en los comandos de sección, `<nav>` y `:focus-visible`; teléfono con `tel:` + chip WhatsApp; `$ ls cv/` en el hero. Proyectos de juguete retirados; agregados Vatio Libre y Snowify. Teléfono único: +57 300 306 0003 (landing y CV).
 - 2026-05-02: migración Astro 5.15 → 6.2.1 + Tailwind 3 → 4; CI valida types de verdad.
 
 ## Cómo agregar un proyecto al portafolio
 
-Editar `src/data/projects.ts` y agregar una entrada al array. Campos relevantes para el índice de terminal: `title`, `shortDesc` (resumen de una línea), `techs` (se muestran los primeros 4), `link` (define el `linkLabel` = dominio, o `privado` si falta). Jerarquía de marcador + orden: `isStar` = producto estrella (★ morada, va primero) → `isFeatured` = destacado (• morado de 6px, va después) → resto sin marcador. Sin tocar componentes.
+Editar `src/data/projects.ts` y agregar una entrada al array. Campos relevantes para el índice de terminal: `title`, `shortDesc` (resumen de una línea), `techs` (se muestran los primeros 4), `link` → `git` → `youtube` (el primero que exista define el enlace de la fila y su `linkLabel`; sin ninguno la fila es un `<div>` con etiqueta `privado`). Jerarquía de marcador + orden: `isStar` = producto estrella (★ morada, va primero) → `isFeatured` = destacado (• morado de 6px, va después) → resto sin marcador. Sin tocar componentes.
 
 ## Cómo actualizar el CV
 

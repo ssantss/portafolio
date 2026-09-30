@@ -4,7 +4,7 @@ cv:
   headline: Full Stack Developer
   location: Pereira, Colombia
   email: santyjimenez92@gmail.com
-  phone: tel:+573118030911
+  phone: tel:+573003060003
   website: https://santiago.paicoders.com
   social_networks:
     - network: LinkedIn
@@ -101,7 +101,7 @@ cv:
       - name: '[Snowify](https://snowify.cc/) — Open Source Contributor'
         start_date: 2025-01
         end_date: present
-        summary: Open source desktop music player based on Electron. **25 PRs merged upstream**, covering full features, bug fixes, and architectural refactors.
+        summary: Open source desktop music player based on Electron. **30 PRs merged upstream**, covering full features, bug fixes, and architectural refactors.
         highlights:
           - 'Key contributions: gapless preload crossfade engine, live internet radio system, predictive audio prefetch cache, internationalization (12 languages), drag-and-drop queue redesign, real-time playback indicators, and multi-artist support.'
           - Extracted a modular architecture from a monolithic codebase, **removing 1,500+ lines** of code.

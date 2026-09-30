@@ -18,9 +18,30 @@ const projects: Project[] = [
     link: 'https://digerpereira.com',
     isStar: true,
     shortDesc:
-      'Plataforma de la Alcaldía de Pereira que digitaliza con IA el censo de familias afectadas por emergencias; 46K+ escaneos.',
+      'Plataforma de la Alcaldía de Pereira que digitaliza con IA el censo de familias afectadas por emergencias. Creador y líder de un equipo de ~10 devs; 46K+ escaneos.',
     description:
-      'Creador y líder técnico de la plataforma con la que la Dirección de Gestión del Riesgo de Pereira digitaliza los formularios de caracterización psicosocial de familias afectadas por emergencias y los reporta al registro nacional de damnificados (RUD/UNGRD). Extracción de formularios escaneados con votación por consenso entre varios modelos de IA, auditoría humana de los campos sin consenso y exportación automatizada al RUD. 46.000+ escaneos procesados y 11.000+ familias reportadas.',
+      'Creador y líder técnico (equipo de ~10 contribuidores) de la plataforma con la que la Dirección de Gestión del Riesgo de Pereira digitaliza los formularios de caracterización psicosocial de familias afectadas por emergencias y los reporta al registro nacional de damnificados (RUD/UNGRD). Extracción de formularios escaneados con votación por consenso entre varios modelos de IA, auditoría humana de los campos sin consenso y exportación automatizada al RUD. 46.000+ escaneos procesados y 11.000+ familias reportadas.',
+  },
+  {
+    title: 'Vatio Libre — Tesla Dashboard',
+    techs: ['Vue.js', 'Django', 'Python', 'Tesla Owner API', 'OAuth'],
+    link: 'https://vatiolibre.com',
+    isFeatured: true,
+    shortDesc:
+      'Cliente en EE. UU.: plataforma de monitoreo de vehículos Tesla con la Tesla Owner API, órdenes y entregas en vivo.',
+    description:
+      'Contratista remoto para Vatio Libre (New Jersey, EE. UU.). Construí desde cero el Tesla Dashboard: integración con la Tesla Owner API y OAuth, decodificador de VIN, órdenes con timeline logístico, panel de entregas con ETA en tiempo real e internacionalización español/inglés.',
+  },
+  {
+    title: 'Snowify — Open Source',
+    techs: ['Electron', 'JavaScript', 'Node.js', 'i18n'],
+    link: 'https://snowify.cc/',
+    git: 'https://github.com/nyakuoff/Snowify',
+    isFeatured: true,
+    shortDesc:
+      'Reproductor de música de escritorio open source: 30 PRs mergeados upstream, crossfade, radio en vivo y 12 idiomas.',
+    description:
+      'Contribuidor open source de Snowify, reproductor de música de escritorio en Electron. 30 PRs mergeados upstream: motor de crossfade sin cortes, radio por internet en vivo, caché predictiva de audio, internacionalización a 12 idiomas y extracción de una arquitectura modular que eliminó 1.500+ líneas.',
   },
   {
     title: 'NotificacionesQR',
@@ -44,7 +65,7 @@ const projects: Project[] = [
       'SaaS de gestión de parqueaderos que fundé y opero: ~130 parqueaderos activos en 14 países y ~1.600 vehículos por día hábil. Motor de cobro con 5 modos (minuto, fracciones, tramos, tarifa plana y pases por horario), mensualidades, convenios con comercios, cierre de caja, impresión térmica por Bluetooth/red, PWA offline-first y app nativa Android.',
   },
   {
-    title: 'Plataforma Empresarial Siesa',
+    title: 'Sileo — Plataforma integrada con Siesa',
     techs: ['Node.js', 'Express', 'Vue.js', 'TypeScript', 'PostgreSQL'],
     link: 'https://asesorexperto.oportunidades.com.co/',
     youtube: 'https://youtu.be/qAlTeZU28H4',
@@ -64,7 +85,7 @@ const projects: Project[] = [
       'Desarrollo de sitio web moderno para empresa de repuestos de motos, implementando las últimas tecnologías de React y despliegue automatizado en Vercel para garantizar alta disponibilidad y rendimiento.',
   },
   {
-    title: 'Metálicas Otalvaro',
+    title: 'Metálicas Otálvaro',
     techs: ['Vue.js', 'Node.js', 'Express', 'PostgreSQL'],
     youtube: 'https://youtu.be/DXWnNB5E3wM',
     shortDesc:
@@ -77,21 +98,11 @@ const projects: Project[] = [
     techs: ['Vue.js', 'Django', 'Python', 'PostgreSQL', 'Docker', 'Next.js', 'React', 'Django REST Framework'],
     link: 'https://recibosypagos.co',
     youtube: 'https://youtu.be/XiDRYkJIyig',
-    isStar: true,
+    isFeatured: true,
     shortDesc:
       'Plataforma de productos y facturas: PWA, APIs REST, scraping y migración de legacy.',
     description:
       'Plataforma especializada en gestión de productos y facturas. Implementación de PWA, APIs RESTful, web scraping para catálogos, y modernización de código legacy. Desarrollo de módulos en Next.js para optimizar escalabilidad y experiencia de usuario.',
-  },
-  {
-    title: 'Movie Ticket Generator',
-    techs: ['React', 'Material-UI', 'Supabase', 'REST APIs', 'JavaScript'],
-    link: 'https://github.com/ssantss/movie-ticket',
-    git: 'https://github.com/ssantss/movie-ticket',
-    shortDesc:
-      'Simulador de Cine Colombia con cartelera en vivo, tickets virtuales y APIs externas.',
-    description:
-      'Simulador de Cine Colombia con sistema de cartelera en tiempo real. Integración con APIs externas (Cine Colombia, OMDB), persistencia de datos con Supabase, sistema de tickets virtuales y visualización de progreso de películas.',
   },
   {
     title: 'Calculadora 4x1000',
@@ -133,51 +144,6 @@ const projects: Project[] = [
       'Gestor de finanzas personales: ahorros, inversiones (CDT) y préstamos a terceros.',
     description:
       'Una app que gestiona tus finanzas con facilidad, puede controlar tus cuentas de ahorro, supervisa inversiones (CDTs, RentaAhorro), manejar tus préstamos a terceros.',
-  },
-  {
-    title: 'Pokédex',
-    techs: ['Vue.js', 'JavaScript', 'Html', 'Css'],
-    git: 'https://github.com/ssantss/Pokedex_vue',
-    link: 'https://pokedex.paicoders.com/',
-    shortDesc:
-      'Pokédex en Vue consumiendo PokéAPI con búsqueda y fichas detalladas.',
-    description:
-      'Pokedex, desarrollado con Vue, aprovecha la API de Pokeapi para acceder a todos los Pokémon y facilitar su búsqueda.',
-  },
-  {
-    title: 'Rick & Morty API',
-    techs: ['JavaScript', 'Html', 'Css'],
-    git: 'https://github.com/ssantss/rickandmortyApi',
-    link: 'https://rickandmorty.paicoders.com/',
-    shortDesc:
-      'Interfaz web interactiva sobre la API de Rick and Morty en JS vanilla.',
-    description:
-      'Este proyecto integra la API de Rick and Morty para crear una interfaz web interactiva utilizando HTML, CSS y JavaScript vanilla.',
-  },
-  {
-    title: 'Geometric-calc',
-    techs: ['JavaScript', 'Html', 'Css'],
-    git: 'https://github.com/ssantss/Geometric_calc',
-    link: 'https://geometriccalc.paicoders.com/',
-    shortDesc: 'Cálculos geométricos en JavaScript vanilla, sin dependencias.',
-    description:
-      'Este proyecto hace calculos geometricos, utilizando HTML, CSS y JavaScript vanilla.',
-  },
-  {
-    title: 'iPhone Stock Checker',
-    techs: ['Python'],
-    git: 'https://gitlab.com/paicoder/iphone-stock-checker',
-    shortDesc: 'Script Python que verifica stock de Apple US por código postal.',
-    description:
-      'Script para verificar la disponibilidad de productos Apple en el sitio web oficial de Apple en EE. UU., necesaria la inclusión de un código postal.',
-  },
-  {
-    title: 'Auto-Refreshify',
-    techs: ['JavaScript', 'Html', 'Css'],
-    git: 'https://gitlab.com/paicoder/reload-page-chrome-extension',
-    shortDesc: 'Extensión de navegador que recarga páginas tras inactividad.',
-    description:
-      'Auto-Refreshify es una extensión de navegador que actualiza páginas automáticamente tras un periodo de inactividad, eliminando la necesidad de clics manuales.',
   },
 ];
 

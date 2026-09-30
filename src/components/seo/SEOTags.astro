@@ -1,23 +1,61 @@
 ---
 import { SEO } from "astro-seo";
 import { SITE_URL } from "@/data/config";
+import presentation from "@/data/presentation";
 import type { HeadTags } from "@/utils/types/HeadTags";
 
 type Props = HeadTags;
 
 const { title, description, noindex, og } = Astro.props;
 
-const DEFAULT_TITLE_PAGE = "Santiago Jimenez -Portfolio";
-const DEFAULT_DESCRIPTION_PAGE = "Portafolio de Santiago Jimenez.";
+const DEFAULT_TITLE_PAGE =
+  "Santiago Jimenez — Full-Stack Engineer (Django + Next.js)";
+const DEFAULT_DESCRIPTION_PAGE =
+  "Full-stack engineer in Colombia with ~5 years shipping production platforms: AI document extraction for the City of Pereira and a parking SaaS used in 14 countries. Django, Next.js, PostgreSQL.";
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
   title: title || og?.title || DEFAULT_TITLE_PAGE,
   type: og?.type || "website",
-  image: og?.image || "/opengraph-image.png",
+  // URL absoluta: LinkedIn, WhatsApp y Slack no resuelven rutas relativas.
+  image: new URL(og?.image || "/opengraph-image.png", SITE_URL).href,
   alt: og?.alt || "Portafolio Santiago Jimenez",
-  url: DEFAULT_URL_SITE,
+  url: new URL(Astro.url.pathname, SITE_URL).href,
   description: og?.description || DEFAULT_DESCRIPTION_PAGE,
+};
+
+// Datos estructurados para Google y asistentes de IA.
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Santiago Jimenez Moncada",
+  alternateName: "Santiago Jimenez",
+  url: SITE_URL,
+  image: new URL("/opengraph-image.png", SITE_URL).href,
+  jobTitle: "Full-Stack Engineer",
+  description: DEFAULT_DESCRIPTION_PAGE,
+  email: `mailto:${presentation.mail}`,
+  telephone: presentation.phone,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Pereira",
+    addressCountry: "CO",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Universidad Tecnológica de Pereira",
+  },
+  knowsAbout: [
+    "Django",
+    "Next.js",
+    "Python",
+    "TypeScript",
+    "PostgreSQL",
+    "LLM integration",
+    "Docker",
+  ],
+  knowsLanguage: ["es", "en"],
+  sameAs: presentation.socials.map((s) => s.link),
 };
 ---
 
@@ -27,14 +65,24 @@ const openGraph = {
     title={title || DEFAULT_TITLE_PAGE}
     description={description || DEFAULT_DESCRIPTION_PAGE}
     noindex={noindex || false}
+    canonical={openGraph.url}
     openGraph={{
       basic: {
         title: openGraph.title,
         type: openGraph.type,
         image: openGraph.image,
+        url: openGraph.url,
       },
       image: {
         alt: openGraph.alt,
+        width: 1200,
+        height: 630,
+      },
+      optional: {
+        description: openGraph.description,
+        locale: "es_CO",
+        localeAlternate: ["en_US"],
+        siteName: "Santiago Jimenez",
       },
     }}
     twitter={{
@@ -44,6 +92,7 @@ const openGraph = {
       link: [
         { rel: "icon", href: "/favicon.svg" },
         { rel: "sitemap", href: "/sitemap-index.xml" },
+        { rel: "alternate", type: "text/plain", href: "/llms.txt", title: "llms.txt" },
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {
           rel: "stylesheet",
@@ -64,4 +113,5 @@ const openGraph = {
       ],
     }}
   />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
 </head>

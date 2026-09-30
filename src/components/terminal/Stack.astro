@@ -4,7 +4,8 @@ const SEP = "  ·  ";
 const groups: { label: string; items: string[] }[] = [
   { label: "core", items: ["Django", "Next.js", "Python", "TypeScript"] },
   { label: "frontend", items: ["React", "Vue", "Svelte", "Tailwind"] },
-  { label: "backend", items: ["FastAPI", "Express", "Django REST", "PostgreSQL"] },
+  { label: "backend", items: ["Django REST", "Celery", "PostgreSQL", "FastAPI"] },
+  { label: "ia", items: ["Anthropic", "Mistral", "Gemini", "Claude Code"] },
   { label: "infra", items: ["Docker", "Linux", "Nginx", "Vercel"] },
   {
     label: "integraciones",
@@ -15,11 +16,12 @@ const groups: { label: string; items: string[] }[] = [
 
 <section
   id="a-stack"
+  aria-labelledby="h-stack"
   class="border-t border-line-soft bg-bg-alt px-5 py-10 md:px-[44px] md:py-[40px]"
 >
-  <div class="mb-[18px] text-[13px] text-faint-2">
+  <h2 id="h-stack" class="mb-[18px] text-[13px] font-normal text-faint-2">
     <span class="text-accent">$</span> cat stack.json
-  </div>
+  </h2>
 
   <div class="overflow-hidden rounded-[8px] border border-line">
     {

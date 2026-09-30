@@ -4,15 +4,17 @@ import presentation from "@/data/presentation";
 // "+573003060003" -> "+57 300 306 0003"
 const national = presentation.phone.replace(/^\+57/, "");
 const phoneDisplay = `+57 ${national.slice(0, 3)} ${national.slice(3, 6)} ${national.slice(6)}`;
+const phoneDigits = presentation.phone.replace(/\D/g, "");
 ---
 
 <section
   id="a-contact"
+  aria-labelledby="h-contact"
   class="border-t border-line-soft bg-bg-alt px-5 py-12 md:px-[44px] md:py-[46px]"
 >
-  <div class="mb-[18px] text-[13px] text-faint-2">
+  <h2 id="h-contact" class="mb-[18px] text-[13px] font-normal text-faint-2">
     <span class="text-accent">$</span> ./contact.sh --now
-  </div>
+  </h2>
 
   <a
     href={`mailto:${presentation.mail}`}
@@ -22,10 +24,20 @@ const phoneDisplay = `+57 ${national.slice(0, 3)} ${national.slice(3, 6)} ${nati
   </a>
 
   <div class="mt-[10px] text-[14px] text-muted">
-    {phoneDisplay}<span class="cursor-blink" aria-hidden="true"></span>
+    <a href={`tel:${presentation.phone}`} class="transition-colors hover:text-text"
+      >{phoneDisplay}</a
+    ><span class="cursor-blink" aria-hidden="true"></span>
   </div>
 
   <div class="mt-[24px] flex flex-wrap gap-[10px]">
+    <a
+      href={`https://wa.me/${phoneDigits}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rounded-[6px] border border-line-2 px-[14px] py-2 text-[13px] text-accent transition-all hover:border-accent hover:bg-[rgba(168,85,247,0.06)]"
+    >
+      WhatsApp
+    </a>
     {
       presentation.socials.map((s) => (
         <a

@@ -1,0 +1,33 @@
+# Santiago Jimenez Moncada
+
+> Full-stack engineer based in Pereira, Colombia, with ~5 years shipping production platforms. Main stack: Django + Next.js (Python, TypeScript, PostgreSQL). Currently creator and lead of an AI document-extraction platform for the City of Pereira, and founder of Parqueadero.app, a parking-management SaaS used in 14 countries. Languages: Spanish (native), English (B2).
+
+This site is his personal portfolio (Spanish). Resumes are available in English and Spanish.
+
+## Resume
+
+- [Resume (English, PDF)](https://santiago.paicoders.com/santiago_jimenez_cv_en.pdf)
+- [Hoja de vida (Español, PDF)](https://santiago.paicoders.com/santiago_jimenez_cv_es.pdf)
+- [Portfolio home](https://santiago.paicoders.com/)
+
+## Featured work
+
+- [DIGER Pereira](https://digerpereira.com): Creator and lead (team of ~10) of the platform the City of Pereira's Disaster Risk Management Office uses to digitize psychosocial census forms of families affected by emergencies and report them to Colombia's national damage registry (RUD/UNGRD). AI extraction from scanned forms with multi-provider consensus voting (Anthropic, Mistral, Gemini) plus human audit; 46,000+ scans processed. Django/DRF, Celery, PostgreSQL, Next.js.
+- [Parqueadero.app](https://parqueadero.app/): Founder and sole developer of a parking-lot management SaaS: ~130 active lots in 14 countries, ~1,600 vehicles per business day. Billing engine with 5 charging modes, offline-first PWA, native Android app, thermal ticket printing (ESC/POS). Django, Next.js, Capacitor.
+- [Vatio Libre — Tesla Dashboard](https://vatiolibre.com): Remote contractor for a US client (New Jersey). Built a Tesla vehicle management and monitoring platform integrated with the Tesla Owner API and OAuth. Vue.js, Django.
+- [Snowify](https://snowify.cc/): Open-source contributor to an Electron desktop music player; 30 PRs merged upstream (crossfade engine, live radio, audio prefetch cache, 12-language i18n, modular refactor).
+- [NotificacionesQR](https://notificacionesqr.com): Real-time WhatsApp alerts for QR payments, Bre-B and Bancolombia transfers via Gmail API + Google Pub/Sub, with PDF reports. Node.js, Baileys.
+
+## Skills
+
+- Backend: Python, Django, Django REST Framework, Celery, FastAPI, Node.js, Express
+- Frontend: Next.js, React, Vue.js, Svelte, TypeScript, Tailwind CSS
+- Data & infra: PostgreSQL, Redis, Docker, Linux, Nginx, PM2, Cloudflare Tunnels, GitHub Actions, Vercel
+- AI: LLM integration (Anthropic, Mistral, Gemini), Claude Code, Codex, Ollama
+
+## Contact
+
+- Email: santyjimenez92@gmail.com
+- Phone / WhatsApp: +57 300 306 0003
+- GitHub: https://github.com/ssantss
+- LinkedIn: https://linkedin.com/in/ssantss
